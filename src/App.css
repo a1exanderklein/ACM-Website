@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
-    background: rgb(0, 0, 0);;
+    background-color: rgb(0,0,0);
   }
 
   .App {
@@ -45,3 +46,7 @@ body {
     }
   }
   
+  .particles-background{
+    background: url('./assets/acmmesh.png') no-repeat center center;
+    background-size: cover;
+  }

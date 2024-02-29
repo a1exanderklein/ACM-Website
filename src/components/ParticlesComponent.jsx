@@ -1,6 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import ACMfish from '../assets/acmfishpurple.png'
+import ACMfish from '../assets/acmfish.png';
 
 export default function ParticlesComponent () {
   const particlesInit = async (main) => {
@@ -11,7 +11,7 @@ export default function ParticlesComponent () {
   return (
     <Particles
       id="tsparticles"
-      className="absolute top-0 left-0 w-full h-full"
+      className="absolute top-0 left-0 w-full h-full particles-background"
       init={particlesInit}
       options={{
         fullScreen: {
@@ -27,7 +27,7 @@ export default function ParticlesComponent () {
             },
           },
           color: {
-            value: "#772eff",
+            value: "#FFFFFF",
           },
           shape: {
             type: "image",
@@ -38,7 +38,7 @@ export default function ParticlesComponent () {
             },
           },
           opacity: {
-            value: 1.0,
+            value: 0.8,
             random: false,
             anim: {
               enable: false,
@@ -70,8 +70,8 @@ export default function ParticlesComponent () {
           line_linked: {
             enable: true,
             distance: 300,
-            color: "#772eff",
-            opacity: 0.4,
+            color: "#FFFFFF",
+            opacity: 0.8,
             width: 0.5,
           },
           move: {
@@ -121,8 +121,7 @@ export default function ParticlesComponent () {
         },
         retina_detect: true,
         background: {
-          color: "#18191A",
-          image: "../assets/acmmesh.png",
+          image: "",
           position: "50% 50%",
           repeat: "no-repeat",
           size: "cover",
