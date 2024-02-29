@@ -20,7 +20,7 @@ export default function ParticlesComponent () {
         },
         particles: {
           number: {
-            value: 40,
+            value: 50,
             density: {
               enable: false,
               value_area: 800,
@@ -38,7 +38,7 @@ export default function ParticlesComponent () {
             },
           },
           opacity: {
-            value: 0.8,
+            value: 1.0,
             random: false,
             anim: {
               enable: false,
@@ -48,7 +48,7 @@ export default function ParticlesComponent () {
             },
           },
           size: {
-            value: 9,
+            value: 10,
             random: false,
             anim: {
               enable: false,
@@ -59,11 +59,11 @@ export default function ParticlesComponent () {
           },
           rotate: {
             value: 0,
-            random: true,
+            random: false,
             direction: "clockwise",
             animation: {
               enable: true,
-              speed: 5,
+              speed: 9,
               sync: false,
             },
           },
