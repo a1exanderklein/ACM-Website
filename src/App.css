@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
-body {
-    background-color: rgb(0,0,0);
+  body {
+    background-color: #18191A;
   }
 
   .App {
@@ -49,4 +50,8 @@ body {
   .particles-background{
     background: url('./assets/acmmesh.png') no-repeat center center;
     background-size: cover;
+  }
+
+  .dm-mono{
+    font-family: 'DM Mono', monospace;
   }
