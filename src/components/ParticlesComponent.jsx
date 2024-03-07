@@ -38,7 +38,7 @@ export default function ParticlesComponent () {
             },
           },
           opacity: {
-            value: 1.0,
+            value: 1,
             random: false,
             anim: {
               enable: false,
@@ -71,7 +71,7 @@ export default function ParticlesComponent () {
             enable: true,
             distance: 300,
             color: "#FFFFFF",
-            opacity: 0.8,
+            opacity: 1.0,
             width: 0.5,
           },
           move: {
