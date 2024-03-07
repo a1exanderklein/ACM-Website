@@ -68,13 +68,14 @@
   }
   
   .particles-background{
-    background: url('./assets/acmmesh.png') no-repeat center center;
+    background: url('./assets/mesh-gradient.png') no-repeat center center;
     background-size: cover;
   }
 
   .dm-mono{
     font-family: 'DM Mono', monospace;
   }
+  
 .navbar_list img{
   width: 9rem;
   height: auto;
