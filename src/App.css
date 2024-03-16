@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 
 html{
   color: white;
+  background-color: rgb(0,0,0);
 }
 
 p{
@@ -11,6 +15,11 @@ p{
   font-weight: 400;
   line-height: 1.5;
 
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 700;
 }
 
 
@@ -26,10 +35,17 @@ p{
 }
 
 
-.App {
-  text-align: center;
-}
 
+
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
 /* NavBar */
 
 .navbar {
@@ -70,6 +86,13 @@ p{
 
 }
 
+.fish-bg{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 .title-bg{
@@ -98,6 +121,40 @@ p{
   line-height: normal;
   margin-bottom: 10px;
 }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .particles-background{
+    background: url('./assets/acmmesh.png') no-repeat center center;
+    background-size: cover;
+  }
 
 .title-text-container{
   width: 35vw;
@@ -150,5 +207,6 @@ p{
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  z-index: 100;
 }
