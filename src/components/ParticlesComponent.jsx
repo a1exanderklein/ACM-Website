@@ -20,7 +20,7 @@ export default function ParticlesComponent () {
         },
         particles: {
           number: {
-            value: 50,
+            value: 70,
             density: {
               enable: false,
               value_area: 800,
@@ -38,7 +38,7 @@ export default function ParticlesComponent () {
             },
           },
           opacity: {
-            value: 1.0,
+            value: 0.4,
             random: false,
             anim: {
               enable: false,
@@ -71,7 +71,7 @@ export default function ParticlesComponent () {
             enable: true,
             distance: 300,
             color: "#FFFFFF",
-            opacity: 0.8,
+            opacity: 0.4,
             width: 0.5,
           },
           move: {
@@ -108,8 +108,14 @@ export default function ParticlesComponent () {
               opacity: 8,
               speed: 3,
             },
+            grab: {
+              distance: 500,
+              line_linked: {
+                opacity: 1,
+              },
+            },
             repulse: {
-              distance: 125,
+              distance: 75,
             },
             push: {
               particles_nb: 4,
