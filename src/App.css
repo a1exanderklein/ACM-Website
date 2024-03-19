@@ -71,8 +71,6 @@ h1{
   align-items: center;
 }
 
-
-
 /* Menu Bar */
 
 .menu_button {
@@ -113,6 +111,77 @@ h1{
 .menu_item {
   font-size: larger;
   font-weight: bold;
+}
+
+/* Sponsor Carousel*/
+
+.carousel {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(250px * 16);
+  animation: scroll 40s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+
+.slide {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  perspective: 100px;
+}
+
+.slide-img {
+  width: 100%;
+  transition: transform .5s;
+}
+
+.slide-img:hover {
+  transform: translateZ(20px);
+}
+
+.carousel::before,
+.carousel::after {
+  background: linear-gradient(to right, rgba(20, 20, 20, 1) 10%
+  , rgba(20, 20, 20, 0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.carousel::before {
+  left:0;
+  top: 0;
+}
+
+.carousel::after {
+  right:0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 
