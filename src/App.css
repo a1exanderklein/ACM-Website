@@ -46,11 +46,14 @@ h1{
     height: 40vmin;
     pointer-events: none;
   }
+
 /* NavBar */
 
 .navbar {
   font-size: 20px;
-  padding: 0 3rem;
+  padding:  1vw 35px;
+  position: absolute;
+  z-index: 2;
 }
 
 .navbar_list {
@@ -61,17 +64,55 @@ h1{
 }
 
 .navbar_list a{
-  font-weight: bold;
+  font-weight: 500;
   color: white;
   text-decoration: none;
   padding: 0 1rem;
   align-items: center;
 }
 
-.navbar_list img{
-  width: 9rem;
-  height: auto;
-  margin-right: auto;
+
+
+/* Menu Bar */
+
+.menu_button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 18px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.menu_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #18191a;
+}
+
+.menu_ulist {
+  padding: 25px;
+  position: fixed;
+  top: 100px;
+  width: 230px;
+}
+
+.menu_list_item {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu_item {
+  font-size: larger;
+  font-weight: bold;
 }
 
 
@@ -208,5 +249,5 @@ h1{
   width: 100vw;
   overflow: hidden;
   position: absolute;
-  z-index: 100;
+  z-index: 1;
 }
