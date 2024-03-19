@@ -4,6 +4,8 @@ import TitlePane from './components/TitlePane';
 import Gradient from './assets/mesh-gradient.png';
 import Home from './components/Home';
 import Menu from './components/Menu'
+import SponsorCarousel from './components/SponsorCarousel';
+
 function App() {
   return (
     <>
@@ -14,6 +16,7 @@ function App() {
         <Home/>
         <h1 id='about'>About</h1>
         <h1 id='sponsors'>Sponsors</h1>
+        <SponsorCarousel/>
         <h1 id='sigs'>Sigs</h1>
     </>
   );
