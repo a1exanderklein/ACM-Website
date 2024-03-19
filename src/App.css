@@ -320,3 +320,23 @@ h1{
   position: absolute;
   z-index: 1;
 }
+
+/* This styles the scrollbar track*/
+::-webkit-scrollbar-track {
+  background: #18191A; /* Light grey background */
+}
+
+/* This styles the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Darker grey thumb */
+}
+
+/* Handle the scrollbar thumb hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Even darker grey on hover */
+}
+
+/* This styles the scrollbar itself */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
