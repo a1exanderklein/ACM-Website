@@ -3,9 +3,10 @@ import About from './components/About';
 
 function App() {
   return(
-    <div className='App'>
+    <>
       <About/>
-    </div>
+    </>
+    
   );
 }
 
