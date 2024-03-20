@@ -184,6 +184,49 @@ h1{
   transform: rotateZ(180deg);
 }
 
+/* Expandable Cards */
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  background: white;
+  padding: 2rem 2rem;
+  color: #141414;
+}
+
+.card img{
+  width: 50%;
+}
+
+.card p{
+  text-align: center;
+  font-size: medium;
+  padding-top: 1rem;
+  line-height: 150%;
+}
+
+.expand {
+  height: 10rem;
+}
+
+/* SIGs */
+
+.sig-cards {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .mesh-gradient{
   position: absolute;

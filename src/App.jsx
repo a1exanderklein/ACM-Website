@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import About from './components/About';
 import SponsorCarousel from './components/SponsorCarousel';
+import SIGs from './components/SIGs';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <h1 id='sponsors'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>
         <h1 id='sigs'>Sigs</h1>
+        <SIGs/>
     </>
   );
 }
