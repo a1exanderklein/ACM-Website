@@ -198,6 +198,7 @@ h1{
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
+  line-height: 6vh;
   width: 20rem;
   background: white;
   padding: 2rem 2rem;
@@ -206,6 +207,7 @@ h1{
 
 .card img{
   width: 50%;
+  height: 50%;
 }
 
 .card p{
@@ -217,6 +219,34 @@ h1{
 
 .expand {
   height: 10rem;
+}
+
+.card-links{
+  width: 25%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-link-icon{
+  font-size: 20px;
+}
+
+.card-arrow-container{
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.card-arrow{
+  cursor: pointer;
+  height: 3vh;
+  width: 3vh;
+  color: var(--gradient1);
 }
 
 /* SIGs */
