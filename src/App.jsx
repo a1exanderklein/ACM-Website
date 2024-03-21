@@ -16,11 +16,9 @@ function App() {
           <Menu/>
         </div>
         <Home/>
-        <h1 id='about'>About</h1>
         <About id='about'/>
-        <h1 id='sponsors'>Sponsors</h1>
+        <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>
-        <h1 id='sigs'>Sigs</h1>
         <SIGs/>
     </>
   );
