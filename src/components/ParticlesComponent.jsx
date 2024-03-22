@@ -38,7 +38,7 @@ export default function ParticlesComponent () {
             },
           },
           opacity: {
-            value: 0.4,
+            value: 0.6,
             random: false,
             anim: {
               enable: false,

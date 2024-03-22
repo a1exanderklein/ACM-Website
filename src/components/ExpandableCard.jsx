@@ -30,6 +30,7 @@ function ExpandableCard(group) {
                 </motion.h2>
                 {isOpen && (
                     <motion.div 
+                        layout='position'
                         transition={{duration: .3}}
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
