@@ -35,7 +35,7 @@ function ExpandableCard(group) {
                         animate={{opacity: 1}}
                         className="expand"
                     >
-                        <p>{group.text}</p>
+                        <p className="sig-p">{group.text}</p>
                     </motion.div>
                 )}
                 <motion.div className="card-links" layout='position'>

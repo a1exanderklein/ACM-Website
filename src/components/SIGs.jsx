@@ -29,7 +29,9 @@ function SIGs() {
     ]
 
     return (
-        <div className='bg-[#18191A]'>
+        
+        <div className='sig-bg-image'>
+
             <h1 id='sigs' className='flex justify-center pt-8'>Special Interest Groups</h1>
             <motion.div className="sig-cards">
                 {groups.map((group) => (

@@ -212,17 +212,29 @@ h3{
 }
 
 .card {
-  display: flex;
+  display: flex;  
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
   line-height: 6vh;
   width: 20rem;
-  background: white;
   padding: 2rem 2rem;
-  color: #141414;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(15px);
+  box-shadow:
+  1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
+  2.6px 4.6px 10px rgba(0, 0, 0, 0.035),
+  6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
+  21px 37px 80px rgba(0, 0, 0, 0.07)
+;
 }
 
+.sig-p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.721);
+}
 .card img{
   width: 50%;
   height: 50%;
@@ -260,11 +272,10 @@ h3{
   margin-top: 5px;
 }
 
-.card-arrow{
+.card-arrow{  
   cursor: pointer;
   height: 3vh;
   width: 3vh;
-  color: var(--gradient1);
 }
 
 /* SIGs */
@@ -309,6 +320,12 @@ h3{
   
   
   
+}
+
+.sig-bg-image {
+  background-image: url('./assets/sigsmesh1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title-text{
