@@ -21,11 +21,11 @@ p{
 }
 
 h1{
-  font-size: 50px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
+  font-size: 40px;
 }
 
 h2{
@@ -46,7 +46,7 @@ h3{
   --transition: all 400ms ease;
   --gradient1: linear-gradient(270deg, #AF79FC 14.57%, #5D35F1 79.32%);
   --gradient2: linear-gradient(270deg, #8DF8FF 14.57%, #5D35F1 79.32%);
-  --gradient3: linear-gradient(270deg, #8DF8FF 14.57%, #AF79FC 79.32%);
+  --gradient3: linear-gradient(27deg, #8DF8FF 14.57%, #AF79FC 79.32%);
 
 
 
@@ -314,11 +314,8 @@ h3{
 .title-text{
   position: relative;
   color: #FFF;
-  font-size: 70px;
   font-style: normal;
-  line-height: normal;
   margin-bottom: 10px;
-  line-height: 1.3;
 }
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
@@ -400,6 +397,24 @@ h3{
   color: var(--gradient1);
 
 
+}
+
+.discord-btn{
+  color: #141414;
+  background-image: var(--gradient3);
+  border-radius: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 15px;
+  font-weight: 700;
+  margin-top: 25px;
+  transition: var(--transition);
+}
+
+.discord-btn:hover{
+  border-color: white;
+  border-style: solid;
+  color: white;
 }
 
 
