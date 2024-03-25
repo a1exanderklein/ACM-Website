@@ -7,6 +7,7 @@ import Menu from './components/Menu';
 import About from './components/About';
 import SponsorCarousel from './components/SponsorCarousel';
 import SIGs from './components/SIGs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>
         <SIGs/>
+        <Footer/>
     </>
   );
 }

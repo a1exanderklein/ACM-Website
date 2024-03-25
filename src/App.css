@@ -287,6 +287,39 @@ h3{
   align-items: center;
 }
 
+/* Footer */
+
+.footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-socials{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.social-button{
+  transition-duration: .3s;
+}
+
+.social-button:hover{
+  opacity: .7;
+}
+
+
 .mesh-gradient{
   position: absolute;
   top: 0;
