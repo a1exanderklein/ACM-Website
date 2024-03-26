@@ -1,5 +1,6 @@
 import React from 'react'
 import { SwipeCarousel } from './SwipeCarousel';
+import CountUp from './CountUp';
 
 function About() {
   return (
@@ -8,13 +9,13 @@ function About() {
         
         <div className="flex-col">
           <div className="text-center">
-            <p className="font-bold gradient-text1">20</p>
+            <CountUp className="font-bold gradient-text1 text-4xl" end={20}/>
             <p className="text-lg">Lifetime Sponsors</p>
           </div>
         </div>
         <div className="flex-col">
           <div className="text-center">
-            <p className="font-bold gradient-text2">#1</p>
+            <CountUp end={1} className="font-bold gradient-text2 text-4xl" prefix='#'/>
             <div className='flex justify-center'>
               <div className='w-1/2'>
                 <p className="text-lg">Largest UF Computing Organization</p>
@@ -24,7 +25,7 @@ function About() {
         </div>
         <div className="flex-col">
           <div className="text-center">
-            <p className="font-bold gradient-text3">1,900+</p>
+            <CountUp end={1900} className="font-bold gradient-text3 text-4xl" formatNumber={true} suffix="+"/>
             <p className="text-lg">Discord Members</p>
           </div>
         </div>
