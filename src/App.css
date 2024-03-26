@@ -481,16 +481,19 @@ h3{
 
 .gradient-text1{
   background: var(--gradient1);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient-text2{
-  background: var(--gradient2);
+  background: var(--gradient3);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient-text3{
-  background: var(--gradient3);
+  background: var(--gradient2);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } 
