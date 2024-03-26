@@ -8,6 +8,7 @@ import About from './components/About';
 import SponsorCarousel from './components/SponsorCarousel';
 import SIGs from './components/SIGs';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import Footer from './components/Footer';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>
         <SIGs/>
+        <Footer/>
     </>
   );
 }
