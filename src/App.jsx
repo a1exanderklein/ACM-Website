@@ -24,6 +24,8 @@ function App() {
         </div>
         <Home/>
 
+        {/* the below is for the movement on scroll for the about section that we talked about */}
+
         {/* <motion.div style={{ y }} className='about-container'>
           <About id='about'/> 
         </motion.div> */}
