@@ -108,7 +108,9 @@ h3{
   left: 0;
   bottom: 0;
   width: 300px;
-  background: #18191a;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(15px);
+
 }
 
 .menu_ulist {
@@ -476,6 +478,25 @@ h3{
   position: absolute;
   z-index: 1;
 }
+
+.gradient-text1{
+  background: var(--gradient1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text2{
+  background: var(--gradient3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text3{
+  background: var(--gradient2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
 
 /* This styles the scrollbar track*/
 ::-webkit-scrollbar-track {
