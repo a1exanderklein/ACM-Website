@@ -8,13 +8,13 @@ function About() {
         
         <div className="flex-col">
           <div className="text-center">
-            <p className="font-bold">20</p>
+            <p className="font-bold gradient-text1">20</p>
             <p className="text-lg">Lifetime Sponsors</p>
           </div>
         </div>
         <div className="flex-col">
           <div className="text-center">
-            <p className="font-bold">#1</p>
+            <p className="font-bold gradient-text2">#1</p>
             <div className='flex justify-center'>
               <div className='w-1/2'>
                 <p className="text-lg">Largest UF Computing Organization</p>
@@ -24,7 +24,7 @@ function About() {
         </div>
         <div className="flex-col">
           <div className="text-center">
-            <p className="font-bold">1,900+</p>
+            <p className="font-bold gradient-text3">1,900+</p>
             <p className="text-lg">Discord Members</p>
           </div>
         </div>
