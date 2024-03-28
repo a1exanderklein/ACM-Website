@@ -31,7 +31,7 @@ function App() {
         </motion.div> */}
 
         <About id='about'/> 
-        
+
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>
         <SIGs/>
