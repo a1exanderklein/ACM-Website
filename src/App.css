@@ -451,23 +451,65 @@ h3{
 
 }
 
-.discord-btn{
-  color: #141414;
-  background-image: var(--gradient3);
-  border-radius: 1.25rem;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding: 15px;
+
+.discord-btn {
+  padding: 15px 30px;
   font-weight: 700;
+  width: 150px; 
+  height: 50px;
   margin-top: 25px;
-  transition: var(--transition);
-  transition-duration: 0.2s;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  background: var(--gradient3);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.discord-btn:hover{
-  border-color: white;
-  border-style: solid;
-  color: white;
+.discord-btn::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px; 
+  bottom: 2px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  background: var(--bg-color);
+  transition: 400ms;
+  z-index: -1;
+}
+
+.discord-btn::after {
+  content: "Join Discord";
+  font-size: 16px;
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient3);
+  -webkit-background-clip: text;  
+  background-clip: text;
+  color: transparent;
+  transition: 400ms;
+  z-index: 2;
+}
+
+.discord-btn:hover::before {  
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.discord-btn:hover::after {
+  color: #fff;
 }
 
 
