@@ -313,6 +313,71 @@ h3{
   font-size: 1.5rem;
 }
 
+/* Officers */
+
+.officer-img {
+    border-radius: 10%;
+    z-index: 1;
+    object-fit: cover;
+    display: inline;
+    width: 175px;
+    height: 175px;
+}
+
+.officer {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.officer-text{
+    font-size: 13px;
+    text-align:left;
+    display:inline;
+}
+
+.officer-text-0 {
+    width: 190px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    float:left;
+    color: white;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.officer-text-centered-label {
+    display: flex;
+    justify-content: center;
+}
+
+.officer-arrow{
+    display:inline;
+    margin-left:50px;
+}
+
 .social-button{
   transition-duration: .3s;
 }
