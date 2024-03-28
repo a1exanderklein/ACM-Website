@@ -498,6 +498,13 @@ h3{
   -webkit-text-fill-color: transparent;
 } 
 
+.countUpText{
+  font-family: 'DM Mono', monospace;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
 /* This styles the scrollbar track*/
 ::-webkit-scrollbar-track {
   background: #18191A; /* Light grey background */
