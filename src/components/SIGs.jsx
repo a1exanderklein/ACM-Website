@@ -29,18 +29,14 @@ function SIGs() {
     ]
 
     return (
-
         <div className='sig-bg-image'>
-            <h1 id='sigs' className='flex justify-center text-center pt-8'>Special Interest Groups</h1>
-            <div className="flex justify-center"> 
-                <motion.div className="sig-cards">
+            <h1 id='sigs' className='flex justify-center text-center p-8'>Special Interest Groups</h1>
+                <motion.div className="sig-cards max-w-full flex-wrap justify-center sm:px-4">
                     {groups.map((group) => (
                         <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} discord={group.discord} link={group.link}/>
                     ))}
                 </motion.div>
-            </div>
         </div>
-        
     )
 };
 
