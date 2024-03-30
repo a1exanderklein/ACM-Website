@@ -1,6 +1,11 @@
 import * as React from "react";
 import { motion } from 'framer-motion';
 import ExpandableCard from "./ExpandableCard";
+import { useState, useEffect } from "react";
+import {Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cards'
+import { EffectCards } from 'swiper/modules';
 
 
 function SIGs() {
@@ -28,14 +33,47 @@ function SIGs() {
             imgSrc: require("../assets/progteam.png") },
     ]
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 872); 
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 872);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+
+    }, []);
+
     return (
         <div className='sig-bg-image'>
             <h1 id='sigs' className='flex justify-center text-center p-8'>Special Interest Groups</h1>
+
+            {isMobile ? (   // If mobile, display the Swiper SIGS component
+
+            <div className="pb-8">
+                <Swiper 
+                    effect={'cards'}
+                    grabCursor={true}
+                    modules={[EffectCards]}
+                    >
+                     {groups.map((group, index) => (
+                        <SwiperSlide key={index}>
+                            <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} discord={group.discord} link={group.link} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+
+            ) : (   // , else display the framer motion SIGS
+
                 <motion.div className="sig-cards max-w-full flex-wrap justify-center sm:px-4">
                     {groups.map((group) => (
                         <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} discord={group.discord} link={group.link}/>
                     ))}
                 </motion.div>
+            )}
+                
         </div>
     )
 };

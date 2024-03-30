@@ -9,13 +9,13 @@ function About() {
         <div id='ACMstats' className='flex justify-evenly p-6 sm:pt-12'>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={2000} className="countUpText gradient-text1" end={2019}/>
+              <CountUp start={2000} className="countUpText gradient-text1 sm:text-4xl" end={2019}/>
               <p className="text-sm sm:text-lg md:text-xl">Established</p>
             </div>
           </div>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={75} end={1} className="countUpText gradient-text2" prefix='#'/>
+              <CountUp start={75} end={1} className="countUpText gradient-text2 sm:text-4xl" prefix='#'/>
               <div className='flex justify-center'>
                 <div className='w-1/2'>
                   <p className="text-xs sm:text-lg md:text-xl">Largest UF Computing Organization</p>
@@ -25,7 +25,7 @@ function About() {
           </div>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={750} end={1900} className="countUpText gradient-text3" formatNumber={true} suffix="+"/>
+              <CountUp start={750} end={1900} className="countUpText gradient-text3 sm:text-4xl" formatNumber={true} suffix="+"/>
               <p className="text-sm sm:text-lg md:text-xl">Discord Members</p>
             </div>
           </div>

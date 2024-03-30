@@ -222,7 +222,7 @@ h3{
   width: 20rem;
   padding: 2rem 2rem;
   color: white;
-  background: rgba(0,0,0,0.5);
+  background: rgba(24, 25, 26);
   backdrop-filter: blur(15px);
   box-shadow:
   1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
@@ -230,6 +230,11 @@ h3{
   6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
   21px 37px 80px rgba(0, 0, 0, 0.07)
 ;
+}
+
+/* For Each Card's Swiper shadow Elements */
+.swiper-slide-shadow {
+  display: none !important;
 }
 
 .sig-p{
