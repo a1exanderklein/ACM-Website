@@ -33,7 +33,7 @@ function SIGs() {
             imgSrc: require("../assets/progteam.png") },
     ]
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 872); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 872); // width that makes the cards stack
 
     useEffect(() => {
         const handleResize = () => {
