@@ -4,83 +4,95 @@ import { IoIosArrowForward } from "react-icons/io";
 function Officers() {
     const officers1 = [
         {
-            name: "Connor",
+            name: "Victor Polisetty",
             position: "President",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
+            linkedin: "https://www.linkedin.com/in/victorpolisetty/",
+            imgSrc: require('../assets/headshots/Victor+Headshots.jpg'),
         },
         {
-            name: "Courtney",
-            position: "Vice President",
-            linkedin: "https://www.linkedin.com/hp",
+            name: "Norman Bukingolts",
+            position: "External Vice President",
+            linkedin: "https://www.linkedin.com/in/norman-codes/",
+            imgSrc: require('../assets/headshots/Norman+Headshot.jpg'),
+        },
+        {
+            name: "Courtney Giang",
+            position: "Internal Vice President",
+            linkedin: "https://www.linkedin.com/in/courtney-giang/",
             imgSrc: require('../assets/headshots/Courtney+Headshot.jpg'),
-        },
-        {
-            name: "Jack",
-            position: "Vice-vice President",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
         },
         
         
     ]
     const officers2 = [
         {
-            name: "Jacob",
-            position: "Social Link",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
+            name: "Alexander Klein",
+            position: "Secretary",
+            linkedin: "https://www.linkedin.com/in/alexanderkleincs/",
+            imgSrc: require('../assets/headshots/Alexander+Headshot.jpg'),
         },
         {
-            name: "Justin",
-            position: "Cartographer",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Justin+Headshot.png'),
-        },
-        {
-            name: "Maya",
-            position: "Mathmetician",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Maya+Headshot.jpg'),
-        },
-        {
-            name: "Shreyas",
-            position: "Historian",
-            linkedin: "https://www.linkedin.com/hp",
+            name: "Shreyas Kodela",
+            position: "Treasurer",
+            linkedin: "https://www.linkedin.com/in/shreyaskodela/",
             imgSrc: require('../assets/headshots/Shreyas-headshot.jpg'),
         },
         {
-            name: "Surya",
-            position: "Lisan al Gaib",
-            linkedin: "https://www.linkedin.com/hp",
+            name: "Maya Harris",
+            position: "Marketing Lead",
+            linkedin: "https://www.linkedin.com/in/mjoyharris/",
+            imgSrc: require('../assets/headshots/Maya+Headshot.jpg'),
+        },
+        {
+            name: "Jack Crew",
+            position: "Professional Affairs Lead",
+            linkedin: "https://www.linkedin.com/in/jack-crew/",
+            imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
+        },
+        {
+            name: "Andrew Ruales",
+            position: "Workshop Lead",
+            linkedin: "https://www.linkedin.com/in/andrewruales/",
             imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
         },
         {
-            name: "Connor",
-            position: "Grandfather",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
+            name: "Miguel Jara",
+            position: "Workshop Lead",
+            linkedin: "https://www.linkedin.com/in/miguel-jar/",
+            imgSrc: require('../assets/headshots/Miguel+Headshot.jpg'),
+        },
+        {
+            name: "Connor Munjed",
+            position: "Social Lead",
+            linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
+            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
         },
         
     ]
     const officers3 = [
         {
-            name: "Connor",
-            position: "GIant President",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
+            name: "Jacob Hoppenstedt",
+            position: "Social Lead",
+            linkedin: "https://www.linkedin.com/in/jacob-hoppenstedt/",
+            imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
         },
         {
-            name: "Connor",
-            position: "Junior Salesman",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
+            name: "Jonathan Zhang",
+            position: "Mentorship Lead",
+            linkedin: "https://www.linkedin.com/in/jonathanzhang53/",
+            imgSrc: require('../assets/headshots/Jonathan+Headshot.png'),
         },
         {
-            name: "Connor",
-            position: "Senior Marketing",
-            linkedin: "https://www.linkedin.com/hp",
-            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
+            name: "Surya Karthikeyan Vijayalakshmi",
+            position: "Graphic Design Lead",
+            linkedin: "https://www.linkedin.com/in/kvsurya/",
+            imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
+        },
+        {
+            name: "Justin Adam",
+            position: "Opportunity Lead",
+            linkedin: "https://www.linkedin.com/in/justin-adam/",
+            imgSrc: require('../assets/headshots/Justin+Headshot.png'),
         },
     ]
     return (
