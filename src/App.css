@@ -222,7 +222,7 @@ h3{
   width: 20rem;
   padding: 2rem 2rem;
   color: white;
-  background: rgba(0,0,0,0.5);
+  background: rgba(24, 25, 26);
   backdrop-filter: blur(15px);
   box-shadow:
   1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
@@ -230,6 +230,11 @@ h3{
   6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
   21px 37px 80px rgba(0, 0, 0, 0.07)
 ;
+}
+
+/* For Each Card's Swiper shadow Elements */
+.swiper-slide-shadow {
+  display: none !important;
 }
 
 .sig-p{
@@ -311,6 +316,71 @@ h3{
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+}
+
+/* Officers */
+
+.officer-img {
+    border-radius: 10%;
+    z-index: 1;
+    object-fit: cover;
+    display: inline;
+    width: 175px;
+    height: 175px;
+}
+
+.officer {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.officer-text{
+    font-size: 13px;
+    text-align:left;
+    display:inline;
+}
+
+.officer-text-0 {
+    width: 190px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    float:left;
+    color: white;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.officer-text-centered-label {
+    display: flex;
+    justify-content: center;
+}
+
+.officer-arrow{
+    display:inline;
+    margin-left:50px;
 }
 
 .social-button{
@@ -539,6 +609,13 @@ h3{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } 
+
+.countUpText{
+  font-family: 'DM Mono', monospace;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+}
 
 /* This styles the scrollbar track*/
 ::-webkit-scrollbar-track {

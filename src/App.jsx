@@ -9,6 +9,7 @@ import SponsorCarousel from './components/SponsorCarousel';
 import SIGs from './components/SIGs';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import Footer from './components/Footer';
+import Officers from './components/Officers';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
         </motion.div> */}
 
         <About id='about'/> 
-
+        <Officers/>
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>
         <SIGs/>
