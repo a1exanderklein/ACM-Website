@@ -33,11 +33,11 @@ function SIGs() {
             imgSrc: require("../assets/progteam.png") },
     ]
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 872 || window.innerHeight < 870); // width that makes the cards stack
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 872 || window.innerHeight < 1150); // width that makes the cards stack
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 872 || window.innerHeight < 870);
+            setIsMobile(window.innerWidth < 872 || window.innerHeight < 1150);
         };
 
         window.addEventListener('resize', handleResize);
