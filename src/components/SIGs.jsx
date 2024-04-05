@@ -35,7 +35,7 @@ function SIGs() {
 
     const [viewportState, setViewportState] = useState({
         isMobile: window.innerWidth < 872 || window.innerHeight < 632,
-        scale: window.innerHeight < 1200 && window.innerWidth < 1703 ? .75 : 1,
+        scale: window.innerHeight < 1200 && window.innerWidth < 1403 ? .75 : 1,
         adjustHeight: window.innerWidth > 639 && window.innerWidth < 1282,
     });
 
@@ -44,7 +44,7 @@ function SIGs() {
         const handleResize = () => {
             // Determine if the viewport is in mobile state and calculate the scale
             const isMobile = window.innerWidth < 872 || window.innerHeight < 632;
-            const scale = window.innerHeight < 1000 && window.innerWidth < 1000 ? .75 : 1;
+            const scale = window.innerHeight < 1200 && window.innerWidth < 1403 ? .75 : 1;
             const adjustHeight = window.innerWidth > 687 && window.innerWidth < 1282;
            
             setViewportState({ isMobile, scale, adjustHeight });
