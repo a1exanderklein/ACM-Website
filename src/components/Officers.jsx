@@ -137,13 +137,14 @@ function Officers() {
     }, []);
 
     const containerClass = isMobile ? 'flexMobile' : 'flexDefault';
+    const officerClass = isMobile ? 'officerMobile' : 'officerCard';
 
 
     return (
         
         <div className='officerCardBg'>
             <div className={containerClass}>
-                <div className="bg-[#00000033] sm:w-1/2 flex-col items-center justify-center">
+                <div className="bg-[#00000066] sm:w-1/2 flex-col items-center justify-center">
                     <h1 className="text-center text-white text-4xl py-8">Meet The Officers</h1>
                     <div className="text-center">
                             <h2 className="text-3xl gradient-text1 p-3">{activeOfficer.name}</h2>
@@ -152,7 +153,7 @@ function Officers() {
                     </div>
                 </div>
                 <div className="pt-10 pb-10 sm:w-1/2 ">
-                    <div className="translate-x-16 sm:translate-x-32">
+                    <div className="">
                         <Swiper
                             pagination={true}
                             effect={'cards'}
@@ -163,12 +164,16 @@ function Officers() {
                             onSlideChange={(swiper) => setActiveOfficer(officers[swiper.activeIndex])}>   
                             {officers.map((officer, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className='flex flex-col items-center p-4 officerCard'>
-                                        <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 rounded-full object-cover mb-4'/>
-                                        <h2 className='text-lg text-white text-center'>{officer.name}</h2>
-                                        <a href={officer.linkedin} className='text-3xl text-blue-500 hover:text-blue-700 hover:scale-110 duration-300 mt-2'>
-                                            <FaLinkedin/>
-                                        </a>
+                                    <div className='flex flex-col items-center p-4'>
+                                        <div className={officerClass}>
+                                            <div className="flex flex-col items-center">
+                                                <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-full object-cover mb-4'/>
+                                                <h2 className='text-lg text-white text-center'>{officer.name}</h2>
+                                                <a href={officer.linkedin} className='text-3xl text-blue-500 hover:text-blue-700 hover:scale-110 duration-300 mt-2 p-2'>
+                                                    <FaLinkedin/>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
                             ))}
