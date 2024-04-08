@@ -74,7 +74,7 @@ function SIGs() {
 
     return (
         <div className='sig-bg-image sm:min-h-screen'>
-            <h1 id='sigs' className='flex justify-center text-center p-8'>Special Interest Groups</h1>
+            <h1 id='sigs' className='flex justify-center text-center p-8 sm:pt-8'>Special Interest Groups</h1>
 
 
             {viewportState.isMobile ? (   // If mobile, display the Swiper SIGS component

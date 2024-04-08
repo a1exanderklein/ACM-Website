@@ -153,32 +153,30 @@ function Officers() {
                     </div>
                 </div>
                 <div className="pt-10 pb-10 sm:w-1/2 ">
-                    <div className="">
-                        <Swiper
-                            pagination={true}
-                            effect={'cards'}
-                            grabCursor={true}
-                            modules={[EffectCards]}
-                            className="mySwiper"
-                            spaceBetween={30}
-                            onSlideChange={(swiper) => setActiveOfficer(officers[swiper.activeIndex])}>   
-                            {officers.map((officer, index) => (
-                                <SwiperSlide key={index}>
-                                    <div className='flex flex-col items-center p-4'>
-                                        <div className={officerClass}>
-                                            <div className="flex flex-col items-center">
-                                                <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-full object-cover mb-4'/>
-                                                <h2 className='text-lg text-white text-center'>{officer.name}</h2>
-                                                <a href={officer.linkedin} className='text-3xl text-blue-500 hover:text-blue-700 hover:scale-110 duration-300 mt-2 p-2'>
-                                                    <FaLinkedin/>
-                                                </a>
-                                            </div>
+                    <Swiper
+                        pagination={true}
+                        effect={'cards'}
+                        grabCursor={true}
+                        modules={[EffectCards]}
+                        className="mySwiper"
+                        spaceBetween={30}
+                        onSlideChange={(swiper) => setActiveOfficer(officers[swiper.activeIndex])}>   
+                        {officers.map((officer, index) => (
+                            <SwiperSlide key={index}>
+                                <div className='flex flex-col items-center p-4'>
+                                    <div className={officerClass}>
+                                        <div className="flex flex-col items-center">
+                                            <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-full object-cover mb-4'/>
+                                            <h2 className='text-lg text-white text-center'>{officer.name}</h2>
+                                            <a href={officer.linkedin} target="_blank" className='text-4xl text-blue-500 hover:text-blue-700 hover:scale-110 duration-300 mt-2 p-2'>
+                                                <FaLinkedin/>
+                                            </a>
                                         </div>
                                     </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
         </div>
