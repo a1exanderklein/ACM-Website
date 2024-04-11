@@ -34,7 +34,7 @@ function useDimensions (ref) {
 };
 
 const sidebar = {
-  open: (height = 800) => ({
+  open: (height = window.innerHeight) => ({
     clipPath: `circle(${height}px at 40px 40px)`,
     transition: {
       delay: 0.3,
