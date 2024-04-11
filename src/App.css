@@ -236,7 +236,6 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 3rem;
 }
 
 .card {
@@ -314,10 +313,11 @@ h3{
 /* SIGs */
 
 .sig-cards {
-  height: 75vh;
+  height: var(--card-y-position, 75vh);
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: var(--sig-card-gap, 3rem);
 }
 
 /* Footer */
@@ -361,8 +361,6 @@ h3{
     z-index: 1;
     object-fit: cover;
     display: inline;
-    width: 175px;
-    height: 175px;
 }
 
 .officer {
@@ -417,6 +415,69 @@ h3{
 .officer-arrow{
     display:inline;
     margin-left:50px;
+}
+
+/* Officer cards for swiper */
+
+.officerCard {  
+  width: 20em;
+  height: 24em;
+  padding: 2rem 2rem;
+  color: white;
+  background: var(--officer-card, rgb(51, 51, 51));
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow:
+    1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
+    2.6px 4.6px 10px rgba(0, 0, 0, 0.035),
+    6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
+    21px 37px 80px rgba(0, 0, 0, 0.07);
+  transition: 
+    background-color 0.1s ease,
+    width 0.1s ease,
+    height 0.1s ease,
+
+  ;
+}
+
+.officerMobile {
+  width: 16em;
+  height: 18em;
+  padding: 2rem 2rem;
+  color: white;
+  background: var(--officer-card, rgb(51, 51, 51));
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow:
+    1px 1.7px 3.6px rgba(0, 0, 0, 0.024),
+    2.6px 4.6px 10px rgba(0, 0, 0, 0.035),
+    6.3px 11.2px 24.1px rgba(0, 0, 0, 0.046),
+    21px 37px 80px rgba(0, 0, 0, 0.07);
+  transition: 
+    background-color 0.1s ease,
+    width 0.1s ease,
+    height 0.1s ease,
+
+  ;
+}
+
+.officerCard:hover {
+  background: rgb(41, 41, 41); /* Darker shade for hover state */
+}
+
+.flexDefault {
+  display: flex;
+}
+
+.flexMobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.officerCardBg {
+  background-image: url('./assets/sigsmesh.png');
+  background-position: center;
+  background-size: cover;
 }
 
 .social-button{
