@@ -312,6 +312,16 @@ h3{
   text-align: center;
 }
 
+.footer-line {
+  font-size: .6rem;
+}
+
+@media (min-width: 768px) {
+  .footer-line {
+    font-size: .875rem;
+  }
+}
+
 .footer-socials{
   display: flex;
   align-items: center;
