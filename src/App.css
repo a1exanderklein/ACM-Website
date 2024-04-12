@@ -313,7 +313,8 @@ h3{
 /* SIGs */
 
 .sig-cards {
-  height: var(--card-y-position, 75vh);
+  /* 75vh before */
+  height: var(--card-y-position, 50vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -678,7 +679,10 @@ h3{
 .discord-btn:hover::after {
   color: #fff;
 }
-
+.fish{
+  width: 400px;
+  height: 120px;
+}
 
 .splash-container{
   height: 100vh;
@@ -738,3 +742,109 @@ h3{
 ::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
 }
+
+@media (max-width: 1100px) {
+  .title-bg{
+    width: 155vh;
+    height: 150vw;
+    margin-left: -30vw;
+    margin-top: 26vh;
+    
+  }
+
+  .title-text{
+    display: none;
+  }
+  .title-text-container{
+    width: 60vw;
+    height: 50vh;
+    margin-left: 20vw;
+    margin-top: 36vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 20l 60t */
+
+  .disc-text{
+    font-size: 25px;
+    text-align: center;
+  }
+  .disc-text-container{
+    width: 60vw;
+    margin-left: 50px;
+    margin-top: 60vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .disc-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-container{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    width: initial;
+    margin-top: 35px;
+    
+  }
+
+  .fish-conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 20vh;
+  }
+
+  .fish-container img{
+    margin: 0;
+    align-self: center;
+    
+  }
+}
+
+
+
+@media (max-width: 850px) {
+  .disc-text{
+    font-size: 20px;
+  }
+  .title-bg{
+    margin-top: 30vh;
+  }
+
+  .title-text-container{
+    margin-top:35vh;
+    margin-left: 20vw;
+  }
+
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .title-text-container{
+    margin-top:30vh;
+  }
+
+
+} 
+
+@media (max-width: 450px) {
+
+  
+  
+
+} 

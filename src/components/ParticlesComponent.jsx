@@ -4,7 +4,7 @@ import ACMfish from '../assets/acmfish.png';
 
 
 
-const numberOfParticles = window.innerWidth < 1100 ? 35 : 70;
+const numberOfParticles = window.innerWidth < 1100 ? 20 : 70;
 
 export default function ParticlesComponent () {
   const particlesInit = async (main) => {
