@@ -21,14 +21,17 @@ function App() {
     const handleResize = () => {
       setIsSmall(window.innerWidth < 1100);
     };
-
+  
+    // Call handleResize once to set the initial state correctly
+    handleResize();
+  
     window.addEventListener('resize', handleResize);
-
+  
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
+ 
 
   return (
     <>

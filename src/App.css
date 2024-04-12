@@ -135,7 +135,6 @@ h3{
 }
 .menu_list_acm{
   list-style: none;
-  margin-bottom: 100px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -147,6 +146,7 @@ h3{
   list-style: none;
   margin-top: 50px;
   display: flex;
+  margin-bottom: 100px;
   align-items: center;
   cursor: pointer;
   font-weight: 800;
@@ -827,6 +827,8 @@ h3{
     margin-left: 20vw;
   }
 
+  
+
 
 
 }
@@ -836,7 +838,18 @@ h3{
 @media (max-width: 600px) {
 
   .title-text-container{
-    margin-top:30vh;
+    margin-top:22vh;
+  }
+
+  .menu_list_acm{
+    margin-bottom: 50px;
+    margin-top: -40px;
+    
+  }
+  .fish{
+    width: 300px;
+    height: 90px;
+
   }
 
 
