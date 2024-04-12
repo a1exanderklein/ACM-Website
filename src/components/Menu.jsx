@@ -60,14 +60,41 @@ function Menu() {
   const { height } = useDimensions(containerRef);
 
   return (
+    // <motion.nav
+    //   initial={false}
+    //   animate={isOpen ? "open" : "closed"}
+    //   custom={height}
+    //   ref={containerRef}
+    // >
+    //   {isOpen && <span><motion.div className="menu_background" variants={sidebar} />
+    //   <Navigation />
+    //   </span>}
+    //   <MenuToggle toggle={() => toggleOpen()} />
+      
+    // </motion.nav>
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
     >
-      <motion.div className="menu_background" variants={sidebar} />
-      <Navigation />
+      <motion.div
+        className="menu_background"
+        variants={{
+          open: { opacity: 1, display: "block" },
+          closed: { opacity: 0, transitionEnd: { display: "none" } }
+        }}
+        animate={isOpen ? "open" : "closed"}
+      />
+      <motion.div
+        variants={{
+          open: { opacity: 1, display: "block" },
+          closed: { opacity: 0, transitionEnd: { display: "none" } }
+        }}
+        animate={isOpen ? "open" : "closed"}
+      >
+        <Navigation />
+      </motion.div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

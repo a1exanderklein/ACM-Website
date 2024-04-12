@@ -2,6 +2,10 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import ACMfish from '../assets/acmfish.png';
 
+
+
+const numberOfParticles = window.innerWidth < 1100 ? 35 : 70;
+
 export default function ParticlesComponent () {
   const particlesInit = async (main) => {
     console.log(main);
@@ -20,7 +24,7 @@ export default function ParticlesComponent () {
         },
         particles: {
           number: {
-            value: 70,
+            value: numberOfParticles,
             density: {
               enable: false,
               value_area: 800,

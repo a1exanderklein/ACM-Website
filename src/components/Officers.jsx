@@ -144,12 +144,12 @@ function Officers() {
         
         <div className='officerCardBg'>
             <div className={containerClass}>
-                <div className="bg-[#00000066] sm:w-1/2 flex-col items-center justify-center">
+                <div className="bg-[#0000008e] sm:w-1/2 flex-col items-center justify-center">
                     <h1 className="text-center text-white text-4xl py-8">Meet The Officers</h1>
                     <div className="text-center">
-                            <h2 className="text-3xl gradient-text1 p-3">{activeOfficer.name}</h2>
-                            <p className="text-2xl gradient-text2 p-3">{activeOfficer.position}</p>
-                            <p className="dm-mono text-sm p-3 sm:text-md md:text-lg gradient-text3">{activeOfficer.bio}</p>
+                            <h2 className="text-3xl gradient-text2 p-3">{activeOfficer.name}</h2>
+                            <p className="text-2xl gradient-text1 p-3">{activeOfficer.position}</p>
+                            <p className="dm-mono text-sm p-3 sm:text-md md:text-lg outline-gray-500">{activeOfficer.bio}</p>
                     </div>
                 </div>
                 <div className="pt-10 pb-10 sm:w-1/2 ">
@@ -168,15 +168,15 @@ function Officers() {
                                         <div className="flex flex-col items-center">
                                             <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-full object-cover mb-4'/>
                                             <h2 className='text-lg text-white text-center'>{officer.name}</h2>
-                                            <a href={officer.linkedin} target="_blank" className='text-4xl text-blue-500 hover:text-blue-700 hover:scale-110 duration-300 mt-2 p-2'>
-                                                <FaLinkedin/>
+                                            <a href={officer.linkedin} target="_blank" className='text-4x hover:scale-110 linked-in duration-300 mt-2 p-2'>
+                                                    <FaLinkedin/>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
                         ))}
-                    </Swiper>
+                    </Swiper>   
                 </div>
             </div>
         </div>

@@ -424,7 +424,7 @@ h3{
   height: 24em;
   padding: 2rem 2rem;
   color: white;
-  background: var(--officer-card, rgb(51, 51, 51));
+  background: var(--officer-card, rgba(32, 32, 32));
   backdrop-filter: blur(20px);
   border-radius: 10px;
   box-shadow:
@@ -713,6 +713,11 @@ h3{
   font-weight: 800;
   line-height: 1.5;
 }
+
+.linked-in{
+    font-size: 32px
+}
+
 
 /* This styles the scrollbar track*/
 ::-webkit-scrollbar-track {

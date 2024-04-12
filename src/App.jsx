@@ -13,9 +13,6 @@ import Officers from './components/Officers';
 
 function App() {
 
-  const { scrollYProgress } = useViewportScroll();
-  const y = useTransform(scrollYProgress, [0, 1], [0, -500]);
-
 
   return (
     <>
@@ -24,13 +21,6 @@ function App() {
           <Menu/>
         </div>
         <Home/>
-
-        {/* the below is for the movement on scroll for the about section that we talked about */}
-
-        {/* <motion.div style={{ y }} className='about-container'>
-          <About id='about'/> 
-        </motion.div> */}
-
         <About id='about'/> 
         <Officers/>
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
