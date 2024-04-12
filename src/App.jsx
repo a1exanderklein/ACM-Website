@@ -10,27 +10,40 @@ import SIGs from './components/SIGs';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import Footer from './components/Footer';
 import Officers from './components/Officers';
+import ACMFish from './assets/acmlogo.png';
+import { useState, useEffect } from 'react';
 
 function App() {
 
-  const { scrollYProgress } = useViewportScroll();
-  const y = useTransform(scrollYProgress, [0, 1], [0, -500]);
+  const [ isSmall, setIsSmall ] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmall(window.innerWidth < 1100);
+    };
+  
+    // Call handleResize once to set the initial state correctly
+    handleResize();
+  
+    window.addEventListener('resize', handleResize);
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+ 
 
   return (
     <>
         <div className='splash-container'>
-          <TitlePane/>
+          {isSmall && <span className='fish-conatiner'>
+             <img src={ACMFish} alt='ACM' className='fish'/>
+          </span>}
+          
+          <TitlePane/ >
           <Menu/>
         </div>
         <Home/>
-
-        {/* the below is for the movement on scroll for the about section that we talked about */}
-
-        {/* <motion.div style={{ y }} className='about-container'>
-          <About id='about'/> 
-        </motion.div> */}
-
         <About id='about'/> 
         <Officers/>
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>

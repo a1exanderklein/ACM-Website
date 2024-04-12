@@ -11,16 +11,17 @@ import { EffectCards } from 'swiper/modules';
 function SIGs() {
 
     const groups = [
-        { title: "Gator VR", 
-            text: "The Virtual Reality club at the UF. Facilitates student projects and showcases the latest VR technologies.", 
-            discord: "https://discord.gg/AdKKJav",
-            link: "https://linktr.ee/gatorvr", 
-            imgSrc: require("../assets/gatorvr.png") },
         { title: "Open Source Club", 
             text: "We are a community of makers, who want to solve problems and improve our world using open source projects.", 
             discord: "https://discord.gg/Gsxej6u",
             link: "https://ufosc.org/", 
             imgSrc: require("../assets/osc.png")},
+        { title: "Gator VR", 
+            text: "The Virtual Reality club at the UF. Facilitates student projects and showcases the latest VR technologies.", 
+            discord: "https://discord.gg/AdKKJav",
+            link: "https://linktr.ee/gatorvr", 
+            imgSrc: require("../assets/gatorvr.png") },
+        
         { title: "Student InfoSec Team", 
             text: "The Cybersecurity club at the UF. Student-led and passionate about all things cybersecurity.", 
             discord: "https://discord.gg/H9k5GEStg6",
@@ -73,7 +74,7 @@ function SIGs() {
 
 
     return (
-        <div className='sig-bg-image sm:min-h-screen'>
+        <div className='sig-bg-image '>
             <h1 id='sigs' className='flex justify-center text-center p-8 sm:pt-8'>Special Interest Groups</h1>
 
 

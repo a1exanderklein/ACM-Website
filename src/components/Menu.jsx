@@ -33,27 +33,6 @@ function useDimensions (ref) {
     return dimensions;
 };
 
-const sidebar = {
-  open: (height = window.innerHeight) => ({
-    clipPath: `circle(${height}px at 40px 40px)`,
-    transition: {
-      delay: 0.3,
-      type: "splash",
-      stiffness: 20,
-      restDelta: 2
-    }
-  }),
-  closed: {
-    clipPath: "circle(1px at 40px 40px)",
-    transition: {
-      delay: 0.3,
-      type: "splash",
-      stiffness: 400,
-      damping: 40
-    }
-  }
-};
-
 function Menu() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
@@ -66,8 +45,23 @@ function Menu() {
       custom={height}
       ref={containerRef}
     >
-      <motion.div className="menu_background" variants={sidebar} />
-      <Navigation />
+      <motion.div
+        className="menu_background"
+        variants={{
+          open: { opacity: 1, display: "block" },
+          closed: { opacity: 0, transitionEnd: { display: "none" } }
+        }}
+        animate={isOpen ? "open" : "closed"}
+      />
+      <motion.div
+        variants={{
+          open: { opacity: 1, display: "block" },
+          closed: { opacity: 0, transitionEnd: { display: "none" } }
+        }}
+        animate={isOpen ? "open" : "closed"}
+      >
+        <Navigation />
+      </motion.div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );
