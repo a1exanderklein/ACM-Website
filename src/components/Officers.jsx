@@ -85,7 +85,7 @@ function Officers() {
           position: "Social Lead",
           linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
           imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
-          bio: "Connor Bio",
+          bio: "Software Engineer Intern @ FIS Global",
 
       },
       {
@@ -149,10 +149,12 @@ function Officers() {
                     <div className="text-center">
                             <h2 className="text-5xl gradient-text2 p-3">{activeOfficer.name}</h2>
                             <p className="text-3xl gradient-text1 p-3">{activeOfficer.position}</p>
-                            <p className="dm-mono text-sm p-3 sm:text-md md:text-lg outline-gray-500">{activeOfficer.bio}</p>
+                            <div className="flex justify-center">
+                                <p className="dm-mono text-sm p-3 sm:text-md md:text-lg outline-gray-500 w-1/2 text-center">{activeOfficer.bio}</p>
+                            </div>
                     </div>
                 </div>
-                <div className="pt-10 pb-10 sm:w-1/2 ">
+                <div className="bg-[#0000008e] pt-10 pb-10 sm:w-1/2 ">
                     <Swiper
                         pagination={true}
                         effect={'cards'}
