@@ -9,7 +9,7 @@ function About() {
         <div id='ACMstats' className='flex justify-evenly p-6 sm:pt-12'>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={2000} className="countUpText gradient-text1 sm:text-4xl" end={2019}/>
+              <CountUp start={2000} className="countUpText gradient-text1 sm:text-4xl" end={2014}/>
               <p className="text-sm sm:text-lg md:text-xl">Established</p>
             </div>
           </div>
@@ -38,7 +38,7 @@ function About() {
           </div>
 
           <div className="text-center text-white max-w-md">
-              <p className="dm-mono text-sm sm:text-lg md:text-xl">Chartered in 2014, University of Florida’s Association for Computing Machinery chapter 
+              <p className="dm-mono text-sm sm:text-lg md:text-xl">University of Florida’s Association for Computing Machinery chapter 
                   is its largest pre-professional computer science organization. Our chapter focuses on 
                   helping students discover their passions, prepare for internships and careers, and make 
                   friends and professional connections. We promote computer science education through 

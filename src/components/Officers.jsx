@@ -14,14 +14,14 @@ function Officers() {
             position: "President",
             linkedin: "https://www.linkedin.com/in/victorpolisetty/",
             imgSrc: require('../assets/headshots/Victor+Headshots.jpg'),
-            bio: "Victor Bio",
+            bio: "Former Software Engineer Intern @ Linkedin & Amazon",
         },
         {
             name: "Norman Bukingolts",
             position: "External Vice President",
             linkedin: "https://www.linkedin.com/in/norman-codes/",
             imgSrc: require('../assets/headshots/Norman+Headshot.jpg'),
-            bio: "Norman Bio",
+            bio: "Former Software Engineer Intern @ University of Florida",
 
         },
         {
@@ -29,7 +29,7 @@ function Officers() {
             position: "Internal Vice President",
             linkedin: "https://www.linkedin.com/in/courtney-giang/",
             imgSrc: require('../assets/headshots/Courtney+Headshot.jpg'),
-            bio: "Courtney Bio",
+            bio: "Former Demand Generation Rep Intern @ Amazon, Former Customer Success Intern @ Infotech",
 
         },
         {
@@ -37,7 +37,7 @@ function Officers() {
           position: "Secretary",
           linkedin: "https://www.linkedin.com/in/alexanderkleincs/",
           imgSrc: require('../assets/headshots/Alexander+Headshot.jpg'),
-          bio: "Alex Bio",
+          bio: "Software Engineer Intern @ Akima",
 
       },
       {
@@ -45,7 +45,7 @@ function Officers() {
           position: "Treasurer",
           linkedin: "https://www.linkedin.com/in/shreyaskodela/",
           imgSrc: require('../assets/headshots/Shreyas-headshot.jpg'),
-          bio: "Shreyas Bio",
+          bio: "Application Development Intern @ HNTB",
 
       },
       {
@@ -53,7 +53,7 @@ function Officers() {
           position: "Marketing Lead",
           linkedin: "https://www.linkedin.com/in/mjoyharris/",
           imgSrc: require('../assets/headshots/Maya+Headshot.jpg'),
-          bio: "Maya Bio",
+          bio: "Software Engineer @ National Instruments, Former Software Engineer Intern @ National Instruments",
 
       },
       {
@@ -61,7 +61,7 @@ function Officers() {
           position: "Professional Affairs Lead",
           linkedin: "https://www.linkedin.com/in/jack-crew/",
           imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
-          bio: "Jack Bio",
+          bio: "Former Business Development Intern @ TaskUs",
 
       },
       {
@@ -69,7 +69,7 @@ function Officers() {
           position: "Workshop Lead",
           linkedin: "https://www.linkedin.com/in/andrewruales/",
           imgSrc: require('../assets/headshots/Andrew+Headshot.jpg'),
-          bio: "Andrew Bio",
+          bio: "Former Software Engineer Intern @ Google, Former Microsoft Explore Intern",
 
       },
       {
@@ -77,7 +77,7 @@ function Officers() {
           position: "Workshop Lead",
           linkedin: "https://www.linkedin.com/in/miguel-jar/",
           imgSrc: require('../assets/headshots/Miguel+Headshot.jpg'),
-          bio: "Miguel Bio",
+          bio: "Former Software Development Engineer Intern @ Amazon",
 
       },
       {
@@ -93,7 +93,7 @@ function Officers() {
         position: "Social Lead",
         linkedin: "https://www.linkedin.com/in/jacob-hoppenstedt/",
         imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
-        bio: "Jacob Bio",
+        bio: "Software Development Engineer Intern @ Publix",
 
     },
     {
@@ -101,7 +101,7 @@ function Officers() {
         position: "Mentorship Lead",
         linkedin: "https://www.linkedin.com/in/jonathanzhang53/",
         imgSrc: require('../assets/headshots/Jonathan+Headshot.png'),
-        bio: "Jonathan Bio",
+        bio: "Former Software Engineer Intern @ Amazon",
 
     },
     {
@@ -109,7 +109,7 @@ function Officers() {
         position: "Graphic Design Lead",
         linkedin: "https://www.linkedin.com/in/kvsurya/",
         imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
-        bio: "Surya Bio",
+        bio: "Software Engineer Intern @ Exelon",
 
     },
     {
@@ -117,7 +117,7 @@ function Officers() {
         position: "Opportunity Lead",
         linkedin: "https://www.linkedin.com/in/justin-adam/",
         imgSrc: require('../assets/headshots/Justin+Headshot.png'),
-        bio: "Justin Bio",
+        bio: "Software Engineer Intern @ Bloomberg, Former Software Engineer Intern @ Asana, Wells Fargo",
 
     },
     ];
@@ -147,8 +147,8 @@ function Officers() {
                 <div className="bg-[#0000008e] sm:w-1/2 flex-col items-center justify-center">
                     <h1 className="text-center text-white text-4xl py-8">Meet The Officers</h1>
                     <div className="text-center">
-                            <h2 className="text-3xl gradient-text2 p-3">{activeOfficer.name}</h2>
-                            <p className="text-2xl gradient-text1 p-3">{activeOfficer.position}</p>
+                            <h2 className="text-5xl gradient-text2 p-3">{activeOfficer.name}</h2>
+                            <p className="text-3xl gradient-text1 p-3">{activeOfficer.position}</p>
                             <p className="dm-mono text-sm p-3 sm:text-md md:text-lg outline-gray-500">{activeOfficer.bio}</p>
                     </div>
                 </div>
@@ -167,7 +167,7 @@ function Officers() {
                                     <div className={officerClass}>
                                         <div className="flex flex-col items-center">
                                             <img src={officer.imgSrc} alt={officer.name} className='w-32 h-32 sm:w-48 sm:h-48 rounded-full object-cover mb-4'/>
-                                            <h2 className='text-lg text-white text-center'>{officer.name}</h2>
+                                            <h2 className='text-md sm:text-2xl text-white text-center'>{officer.name}</h2>
                                             <a href={officer.linkedin} target="_blank" className='text-4x hover:scale-110 linked-in duration-300 mt-2 p-2'>
                                                     <FaLinkedin/>
                                             </a>

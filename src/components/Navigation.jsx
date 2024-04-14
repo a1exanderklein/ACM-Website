@@ -2,7 +2,6 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import { MenuDiscordBtn } from "./MenuDiscordBtn";
-import { MenuACMLogo } from "./MenuACMLogo";
 
 const variants = {
   open: {
@@ -27,7 +26,6 @@ const menuItems = [
 
 export const Navigation = () => (
   <motion.ul className="menu_ulist" variants={variants}>
-    <MenuACMLogo />
     {menuItems.map((item) => (
       <MenuItem item={item} key={item.text} />
     ))}
