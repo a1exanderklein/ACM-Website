@@ -36,7 +36,7 @@ const CountUp = ({ start = 0, end, className, prefix = '', suffix = '', formatNu
         const counter = setInterval(() => {
           setDisplayNumber(changeFunction);
         }, countSpeed);
-      }, 500);
+      }, 300);
     } else {
       controls.start({ opacity: 0, y: 20 });
     }
