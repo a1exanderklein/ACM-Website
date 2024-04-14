@@ -1,8 +1,28 @@
 import React from 'react'
 import { SwipeCarousel } from './SwipeCarousel';
 import CountUp from './CountUp';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function About() {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 1.0
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start({
+        opacity: 1,
+        y: 0, 
+        transition: { duration: 1.0 } 
+      });
+    } else {
+      controls.start({ opacity: 0, y: 20 }); 
+    }
+  }, [controls, inView]);
+
   return (
     <div className='bg-[#18191A]'>
       <div className='bg-[#141414]'>
@@ -10,7 +30,7 @@ function About() {
           <div className="flex-col">
             <div className="text-center">
               <CountUp start={2000} className="countUpText gradient-text1 sm:text-4xl" end={2014}/>
-              <p className="text-sm sm:text-lg md:text-xl">Established</p>
+              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl">Established</motion.p>
             </div>
           </div>
           <div className="flex-col">
@@ -18,7 +38,7 @@ function About() {
               <CountUp start={75} end={1} className="countUpText gradient-text2 sm:text-4xl" prefix='#'/>
               <div className='flex justify-center'>
                 <div className='w-1/2'>
-                  <p className="text-xs sm:text-lg md:text-xl">Largest UF Computing Organization</p>
+                <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-xs sm:text-lg md:text-xl">Largest UF Computing Organization</motion.p>
                 </div>
               </div>
             </div>
@@ -26,7 +46,7 @@ function About() {
           <div className="flex-col">
             <div className="text-center">
               <CountUp start={750} end={1900} className="countUpText gradient-text3 sm:text-4xl" formatNumber={true} suffix="+"/>
-              <p className="text-sm sm:text-lg md:text-xl">Discord Members</p>
+              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl">Discord Members</motion.p>
             </div>
           </div>
         </div>
