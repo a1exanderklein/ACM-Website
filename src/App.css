@@ -216,7 +216,7 @@ h3{
   height: 100%;
   position: absolute;
   width: 15%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .carousel::before {
@@ -684,12 +684,12 @@ h3{
   height: 120px;
 }
 
-.splash-container{
+.splash-container{ /*background for menu bar*/
   height: 100vh;
   width: 100vw;
   overflow: hidden;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 .gradient-text1{

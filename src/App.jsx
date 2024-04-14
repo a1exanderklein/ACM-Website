@@ -43,12 +43,12 @@ function App() {
           <TitlePane/ >
           <Menu/>
         </div>
-        <Home/>
+        <Home id='home'/>
         <About id='about'/> 
         <Officers/>
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>
-        <SIGs/>
+        <SIGs id='sigs'/>
         <Footer/>
     </>
   );
