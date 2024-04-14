@@ -140,6 +140,7 @@ h3{
   cursor: pointer;
   font-weight: 800;
   font-size: 28px;
+  margin-bottom: 100px;
 
 }
 .menu_list_discord{
@@ -748,7 +749,7 @@ h3{
     width: 155vh;
     height: 150vw;
     margin-left: -30vw;
-    margin-top: 26vh;
+    margin-top: 25vh;
     
   }
 
@@ -819,7 +820,7 @@ h3{
     font-size: 20px;
   }
   .title-bg{
-    margin-top: 30vh;
+    margin-top: 23vh;
   }
 
   .title-text-container{
@@ -855,9 +856,15 @@ h3{
 
 } 
 
-@media (max-width: 450px) {
+@media (max-height: 700px) {
 
+
+  .title-bg{
+    width: 180vh;
+    height: 180vw;
+  }
   
-  
+
+
 
 } 
