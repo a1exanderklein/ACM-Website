@@ -85,7 +85,7 @@ function Officers() {
           position: "Social Lead",
           linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
           imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
-          bio: "Connor Bio",
+          bio: "Software Engineer Intern @ FIS Global",
 
       },
       {
