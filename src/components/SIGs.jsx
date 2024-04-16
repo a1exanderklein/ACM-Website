@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from 'framer-motion';
 import ExpandableCard from "./ExpandableCard";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect, useEffect } from "react";
 import {Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards'
@@ -42,18 +42,23 @@ function SIGs() {
 
 
     useEffect(() => {
-        const handleResize = () => {
+        const updateState = () => {
             const isMobile = window.innerWidth < 872 || window.innerHeight < 632;
             const scale = window.innerHeight < 1204 || window.innerWidth < 1433 ? .75 : 1;
             const adjustHeight = window.innerHeight < 968 || window.innerWidth < 1291;
-            setViewportState({ isMobile, scale, adjustHeight });
+            return { isMobile, scale, adjustHeight };
         };
 
+        const handleResize = () => {
+            setViewportState(updateState());
+        };
+
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const sigCardsElement = document.querySelector('.sig-cards');
         const cardGap = viewportState.scale < 1 ? '1px' : '3rem';
         const yPosition = viewportState.adjustHeight ? '100vh' : '50vh';
