@@ -36,8 +36,8 @@ function SIGs() {
 
     const [viewportState, setViewportState] = useState({
         isMobile: window.innerWidth < 872 || window.innerHeight < 632,
-        scale: window.innerHeight < 1200 && window.innerWidth < 1403 ? .75 : 1,
-        adjustHeight: window.innerWidth > 639 && window.innerWidth < 1282,
+        scale: window.innerHeight < 1204 && window.innerWidth < 1424 ? .75 : 1,
+        adjustHeight: window.innerHeight > 631 && window.innerWidth < 1282,
     });
 
 
@@ -45,42 +45,32 @@ function SIGs() {
         const handleResize = () => {
             // Determine if the viewport is in mobile state and calculate the scale
             const isMobile = window.innerWidth < 872 || window.innerHeight < 632;
-            const scale = window.innerHeight < 1200 && window.innerWidth < 1403 ? .75 : 1;
-            const adjustHeight = window.innerWidth > 687 && window.innerWidth < 1282;
+            const scale = window.innerHeight < 1204 || window.innerWidth < 1424 || window.innerHeight > 2036 ? .75 : 1;
+            const adjustHeight = window.innerHeight > 631 && window.innerWidth < 1282;
            
             setViewportState({ isMobile, scale, adjustHeight });
            
             // Update the gap based on the new scale value
             const sigCardsElement = document.querySelector('.sig-cards');
             const cardGap = scale < 1 ? '1px' : '3rem';
-            const yPosition = '938px';
+            const yPosition = '650px';
             if (sigCardsElement) {
                 sigCardsElement.style.setProperty('--sig-card-gap', cardGap);
                 sigCardsElement.style.setProperty('--card-y-position', yPosition);
             }
         };
 
-
-        // Call handleResize immediately to set initial state based on current viewport
         handleResize();
 
-
-        // Listen for resize events to update state
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
 
-
     }, []);
 
-
     return (
-        <div className='sig-bg-image '>
+        <div className='sig-bg-image'>
             <h1 id='sigs' className='flex justify-center text-center p-8 sm:pt-8'>Special Interest Groups</h1>
-
-
             {viewportState.isMobile ? (   // If mobile, display the Swiper SIGS component
-
-
             <div className="pb-8">
                 <Swiper
                     effect={'cards'}
@@ -93,11 +83,7 @@ function SIGs() {
                     ))}
                 </Swiper>
             </div>
-
-
             ) : (   // , else display the framer motion SIGS
-
-
                 // Non-Mobile view with conditional scaling
                 <motion.div className="flex-wrap sig-cards justify-center" style={{'--sig-card-gap': '3rem'}}>
                     {groups.map((group, index) => (
@@ -105,13 +91,10 @@ function SIGs() {
                             transform: `scale(${viewportState.scale})`,
                             transformOrigin: 'center',
                         }}>
-
-
                             <ExpandableCard title={group.title} text={group.text} imgSrc={group.imgSrc} discord={group.discord} link={group.link}/>
                         </motion.div>
                     ))}
                 </motion.div>
-           
             )}
         </div>
     )
