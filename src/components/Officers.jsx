@@ -151,7 +151,7 @@ function Officers() {
                             <h2 className="text-5xl gradient-text2 p-3">{activeOfficer.name}</h2>
                             <p className="text-3xl gradient-text1 p-3">{activeOfficer.position}</p>
                             <div className="flex justify-center">
-                                <p className="w-5/6 sm:w-1/2 dm-mono text-sm p-3 sm:text-md md:text-lg outline-gray-500">{activeOfficer.bio}</p>
+                                <p className="dm-mono text-sm p-3 sm:text-md md:text-lg outline-gray-500 w-1/3 text-center sm:w-1/2">{activeOfficer.bio}</p>
                             </div>
                     </div>
                 </div>
