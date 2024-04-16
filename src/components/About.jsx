@@ -16,7 +16,7 @@ function About() {
       controls.start({
         opacity: 1,
         y: 0, 
-        transition: { duration: 1.0 } 
+        transition: { duration: 1.5 } 
       });
     } else {
       controls.start({ opacity: 0, y: 20 }); 
@@ -25,28 +25,28 @@ function About() {
 
   return (
     <div className='bg-[#18191A]'>
-      <div className='bg-[#141414]'>
-        <div id='ACMstats' className='flex justify-evenly p-6 sm:pt-12'>
+      <div className='bg-[#141414] h-1/2'>
+        <div id='ACMstats' className='flex justify-evenly align-center py-11'>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={2000} className="countUpText gradient-text1 sm:text-4xl" end={2014}/>
-              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl">Established</motion.p>
+              <CountUp start={2000} className="countUpText gradient-text1 sm:text-5xl" end={2014}/>
+              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl pt-3">Established in</motion.p>
             </div>
           </div>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={75} end={1} className="countUpText gradient-text2 sm:text-4xl" prefix='#'/>
+              <CountUp start={75} end={1} className="countUpText gradient-text2 sm:text-5xl" prefix='#'/>
               <div className='flex justify-center'>
                 <div className='w-1/2'>
-                <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-xs sm:text-lg md:text-xl">Largest UF Computing Organization</motion.p>
+                <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-xs sm:text-lg md:text-xl pt-3">Largest UF Computing Organization</motion.p>
                 </div>
               </div>
             </div>
           </div>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={750} end={1900} className="countUpText gradient-text3 sm:text-4xl" formatNumber={true} suffix="+"/>
-              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl">Discord Members</motion.p>
+              <CountUp start={750} end={1900} className="countUpText gradient-text3 sm:text-5xl" formatNumber={true} suffix="+"/>
+              <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl pt-3">Virtual Members</motion.p>
             </div>
           </div>
         </div>
