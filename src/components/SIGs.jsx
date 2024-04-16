@@ -37,35 +37,32 @@ function SIGs() {
     const [viewportState, setViewportState] = useState({
         isMobile: window.innerWidth < 872 || window.innerHeight < 632,
         scale: window.innerHeight < 1204 && window.innerWidth < 1424 ? .75 : 1,
-        adjustHeight: window.innerHeight > 631 && window.innerWidth < 1282,
+        adjustHeight: window.innerHeight < 968 || window.innerWidth < 1282,
     });
 
 
     useEffect(() => {
         const handleResize = () => {
-            // Determine if the viewport is in mobile state and calculate the scale
             const isMobile = window.innerWidth < 872 || window.innerHeight < 632;
-            const scale = window.innerHeight < 1204 || window.innerWidth < 1424 || window.innerHeight > 2036 ? .75 : 1;
-            const adjustHeight = window.innerHeight > 631 && window.innerWidth < 1282;
-           
+            const scale = window.innerHeight < 1204 || window.innerWidth < 1424 ? .75 : 1;
+            const adjustHeight = window.innerHeight < 968 || window.innerWidth < 1282;
             setViewportState({ isMobile, scale, adjustHeight });
-           
-            // Update the gap based on the new scale value
-            const sigCardsElement = document.querySelector('.sig-cards');
-            const cardGap = scale < 1 ? '1px' : '3rem';
-            const yPosition = '650px';
-            if (sigCardsElement) {
-                sigCardsElement.style.setProperty('--sig-card-gap', cardGap);
-                sigCardsElement.style.setProperty('--card-y-position', yPosition);
-            }
         };
-
-        handleResize();
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-
     }, []);
+
+    useEffect(() => {
+        const sigCardsElement = document.querySelector('.sig-cards');
+        const cardGap = viewportState.scale < 1 ? '1px' : '3rem';
+        const yPosition = viewportState.adjustHeight ? '100vh' : '50vh';
+
+        if (sigCardsElement) {
+            sigCardsElement.style.setProperty('--sig-card-gap', cardGap);
+            sigCardsElement.style.setProperty('--card-y-position', yPosition);
+        }
+    }, [viewportState.scale, viewportState.adjustHeight]);
 
     return (
         <div className='sig-bg-image'>

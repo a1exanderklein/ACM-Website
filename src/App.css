@@ -315,10 +315,9 @@ h3{
 
 .sig-cards {
   /* 75vh before */
-  height: var(--card-y-position, 50vh);
+  height: var(--card-y-position);
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: var(--sig-card-gap, 3rem);
 }
 
