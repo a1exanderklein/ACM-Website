@@ -35,16 +35,15 @@ function SIGs() {
     ]
 
     const [viewportState, setViewportState] = useState({
-        isMobile: window.innerWidth < 872 || window.innerHeight < 750,
-        scale: (window.innerHeight < 1204 && window.innerWidth < 1520) ? .75 : 1,
+        isMobile: window.innerWidth < 872 || window.innerHeight < 800,
+        scale: (window.innerHeight < 1204 && window.innerWidth < 1520) || (window.innerHeight < 1000 && window.innerWidth > 1539) ? .75 : 1,
         adjustHeight: (window.innerHeight > 1203 || window.innerWidth < 1291) && !(window.innerHeight > 1203 && window.innerWidth > 1431),
     });
 
-
     useEffect(() => {
         const updateState = () => {
-            const isMobile = window.innerWidth < 872 || window.innerHeight < 750;
-            const scale = (window.innerHeight < 1204 && window.innerWidth < 1520)? .75 : 1;
+            const isMobile = window.innerWidth < 872 || window.innerHeight < 800;
+            const scale = (window.innerHeight < 1204 && window.innerWidth < 1520) || (window.innerHeight < 1000 && window.innerWidth > 1539) ? .75 : 1;
             const adjustHeight = (window.innerHeight > 1203 || window.innerWidth < 1291) && !(window.innerHeight > 1203 && window.innerWidth > 1431);
             return { isMobile, scale, adjustHeight };
         };
