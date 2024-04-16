@@ -35,17 +35,17 @@ function SIGs() {
     ]
 
     const [viewportState, setViewportState] = useState({
-        isMobile: window.innerWidth < 872 || window.innerHeight < 632,
-        scale: window.innerHeight < 1204 && window.innerWidth < 1433 ? .75 : 1,
-        adjustHeight: window.innerHeight < 968 || window.innerWidth < 1291,
+        isMobile: window.innerWidth < 872 || window.innerHeight < 750,
+        scale: (window.innerHeight < 1204 && window.innerWidth < 1520) ? .75 : 1,
+        adjustHeight: (window.innerHeight > 1203 || window.innerWidth < 1291) && !(window.innerHeight > 1203 && window.innerWidth > 1431),
     });
 
 
     useEffect(() => {
         const updateState = () => {
-            const isMobile = window.innerWidth < 872 || window.innerHeight < 632;
-            const scale = window.innerHeight < 1204 || window.innerWidth < 1433 ? .75 : 1;
-            const adjustHeight = window.innerHeight < 968 || window.innerWidth < 1291;
+            const isMobile = window.innerWidth < 872 || window.innerHeight < 750;
+            const scale = (window.innerHeight < 1204 && window.innerWidth < 1520)? .75 : 1;
+            const adjustHeight = (window.innerHeight > 1203 || window.innerWidth < 1291) && !(window.innerHeight > 1203 && window.innerWidth > 1431);
             return { isMobile, scale, adjustHeight };
         };
 
@@ -55,6 +55,7 @@ function SIGs() {
 
         handleResize();
         window.addEventListener('resize', handleResize);
+        window.dispatchEvent(new Event('resize'));
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
