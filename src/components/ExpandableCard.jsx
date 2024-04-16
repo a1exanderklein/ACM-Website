@@ -9,7 +9,8 @@ function ExpandableCard(group) {
     const [rotationAngle, setRotationAngle] = useState(0);
 
     const toggleCard = () => {
-        setIsOpen(!isOpen);
+        const newState = !isOpen;
+        setIsOpen(newState);
         setRotationAngle(rotationAngle === 0 ? 180 : 0);
     };
 
