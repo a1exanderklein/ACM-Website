@@ -155,7 +155,7 @@ function Officers() {
                             </div>
                     </div>
                 </div>
-                <div className="pt-10 pb-10 sm:w-1/2 ">
+                <div className="bg-[#0000008e] pt-10 pb-10 sm:w-1/2 ">
                     <Swiper
                         pagination={true}
                         effect={'cards'}
