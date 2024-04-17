@@ -1,10 +1,11 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import ACMfish from '../assets/acmfish.png';
+import { useState } from "react";
+import { useEffect } from "react";
 
 
 
-const numberOfParticles = window.innerWidth < 1100 ? 20 : 70;
 
 export default function ParticlesComponent () {
   const particlesInit = async (main) => {
@@ -12,6 +13,23 @@ export default function ParticlesComponent () {
     await loadFull(main);
   };
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
+
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1100);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Call handleResize once to set the initial state correctly
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
   return (
     <Particles
       id="tsparticles"
@@ -24,7 +42,7 @@ export default function ParticlesComponent () {
         },
         particles: {
           number: {
-            value: numberOfParticles,
+            value: (isMobile ? 20 : 70),
             density: {
               enable: false,
               value_area: 800,
