@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaDiscord, FaLink  } from "react-icons/fa";
+import { useEffect } from "react";
 
 function ExpandableCard(group) {
     const [isOpen, setIsOpen] = useState(false)
@@ -14,13 +15,31 @@ function ExpandableCard(group) {
         setRotationAngle(rotationAngle === 0 ? 180 : 0);
     };
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 872 || window.innerHeight < 800);
+
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 872 || window.innerHeight < 800);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Call handleResize once to set the initial state correctly
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <div className="box">
             <motion.div 
                 transition={{layout: { duration: 1, type: 'spring'}}}
                 style={{borderRadius: '1rem'}}
                 layout
-                className="card"
+                className={isMobile ? "card" : "frosted-card card"}
             >
                 <motion.img layout='position' src={group.imgSrc} alt={group.title} />
                 <motion.h2 
