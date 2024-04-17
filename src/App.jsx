@@ -40,7 +40,7 @@ function App() {
              <img src={ACMFish} alt='ACM' className='fish'/>
           </span>}
           
-          <TitlePane/ >
+          <TitlePane/>
           <Menu/>
         </div>
         <Home/>

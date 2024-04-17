@@ -258,6 +258,11 @@ h3{
 ;
 }
 
+.frosted-card{
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+}
+
 /* For Each Card's Swiper shadow Elements */
 .swiper-slide-shadow {
   display: none !important;
