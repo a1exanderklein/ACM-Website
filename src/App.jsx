@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-        <div className='splash-container'>
+        <div className='splash-container' id='home'>
           {isSmall && <span className='fish-conatiner'>
              <img src={ACMFish} alt='ACM' className='fish'/>
           </span>}
@@ -43,8 +43,8 @@ function App() {
           <TitlePane/ >
           <Menu/>
         </div>
-        <Home id='home'/>
-        <About id='about'/> 
+        <Home/>
+        <About/> 
         <Officers/>
         <h1 id='sponsors' className='flex justify-center p-4'>Sponsors</h1>
         <SponsorCarousel id='sponsors'/>

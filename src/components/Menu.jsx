@@ -60,7 +60,7 @@ function Menu() {
         }}
         animate={isOpen ? "open" : "closed"}
       >
-        <Navigation />
+        <Navigation toggleOpen={toggleOpen}/>
       </motion.div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>

@@ -12,22 +12,18 @@ const variants = {
     }
 };
 
-function ScrollSection(elementId) {
-    const element = document.getElementById(elementId);
-    element.scrollIntoView({ block: "start", behavior: "smooth" });
-}
 
 const menuItems = [
-    { text: "Home", onClick: () => ScrollSection("home"), id: "home" },
-    { text: "About", onClick: () => ScrollSection("about"), id: "about" },
-    { text: "Sponsors", onClick: () => ScrollSection("sponsors"), id: "sponsors" },
-    { text: "SIGs", onClick: () => ScrollSection("sigs"), id: "sigs" },
+    { text: "Home", id: "home" },
+    { text: "About", id: "about" },
+    { text: "Sponsors", id: "sponsors" },
+    { text: "SIGs", id: "sigs" },
 ];
 
-export const Navigation = () => (
+export const Navigation = ({ toggleOpen }) => (
   <motion.ul className="menu_ulist" variants={variants}>
     {menuItems.map((item) => (
-      <MenuItem item={item} key={item.text} />
+      <MenuItem item={item} key={item.text} toggleOpen={toggleOpen}/>
     ))}
     <MenuDiscordBtn />
     
