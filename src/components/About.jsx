@@ -24,7 +24,7 @@ function About() {
   }, [controls, inView]);
 
   return (
-    <div className='bg-[#18191A]'>
+    <div className='bg-[#18191A]' id='about'>
       <div className='bg-[#141414] h-1/2'>
         <div id='ACMstats' className='flex justify-evenly align-center py-11'>
           <div className="flex-col">

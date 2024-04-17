@@ -18,7 +18,21 @@ const variants = {
   }
 };
 
-export const MenuItem = ({ item }) => {
+function ScrollSection(elementId) {
+  const element = document.getElementById(elementId);
+  if (element) {
+      element.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+}
+
+
+
+export const MenuItem = ({ item, toggleOpen }) => {
+  const handleClick = () => {
+    ScrollSection(item.id);
+    toggleOpen(); // Close the menu
+  };
+
   return (
     <motion.li
       className="menu_list_item"
@@ -26,7 +40,7 @@ export const MenuItem = ({ item }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <a href="/#" className="menu_item" onClick={item.onClick}>{item.text}</a>
+      <span className="menu_item" onClick={handleClick}>{item.text}</span>
     </motion.li>
   );
 };
