@@ -10,6 +10,103 @@ import 'swiper/css/pagination';
 function Officers() {
     const officers = [
         {
+            name: "Norman Bukingolts",
+            position: "President",
+            linkedin: "https://www.linkedin.com/in/norman-codes/",
+            imgSrc: require('../assets/headshots/Norman+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ HumeAI, University of Florida",
+        },
+        {
+            name: "Alexander Klein",
+            position: "Internal Vice President",
+            linkedin: "https://www.linkedin.com/in/alexanderkleincs/",
+            imgSrc: require('../assets/headshots/Alexander+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ Akima",
+
+        },
+        {
+            name: "Surya Karthikeyan Vijayalakshmi",
+            position: "External Vice President",
+            linkedin: "https://www.linkedin.com/in/kvsurya/",
+            imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
+            bio: "Director of Web Development @ University of Florida Homecoming and Gator Growl",
+
+        },
+        {
+            name: "Jacob Hoppenstedt",
+            position: "Secretary",
+            linkedin: "https://www.linkedin.com/in/jacob-hoppenstedt/",
+            imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
+            bio: "Former Software Development Engineer Intern @ Publix",
+
+        },
+        {
+            name: "Connor Munjed",
+            position: "Treasurer",
+            linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
+            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ FIS Global",
+
+        },
+        {
+            name: "Anteneh Zewdie",
+            position: "Marketing Lead",
+            linkedin: "https://www.linkedin.com/in/antenehzewdie/",
+            imgSrc: require('../assets/headshots/Anteneh+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ Prevent Overdose Inc.",
+
+        },
+        {
+            name: "Jack Crew",
+            position: "VP of Professional Affairs",
+            linkedin: "https://www.linkedin.com/in/jack-crew/",
+            imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
+            bio: "Former Business Development Intern @ TaskUs",
+
+        },
+        {
+            name: "Alexander Fisher",
+            position: "Workshop Lead",
+            linkedin: "https://www.linkedin.com/in/alexander-fisher-00209828a/",
+            imgSrc: require('../assets/headshots/Fisher+Headshot.jpg'),
+            bio: "Incoming Software Engineer Intern @ BNY",
+
+        },
+        {
+            name: "Kovidh Gandreti",
+            position: "Workshop Lead",
+            linkedin: "https://www.linkedin.com/in/kovidhgandreti/",
+            imgSrc: require('../assets/headshots/Kovidh+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ Lockheed Martin Aeronautics",
+
+        },
+        {
+            name: "Diego Alvarez d Jesus",
+            position: "Social Lead",
+            linkedin: "https://www.linkedin.com/in/dalvarezdejesus/",
+            imgSrc: require('../assets/headshots/Diego+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ Northrop Grumman",
+
+        },
+        {
+            name: "Kevin Newbold",
+            position: "Social Lead",
+            linkedin: "https://www.linkedin.com/in/newbold-kevin/",
+            imgSrc: require('../assets/headshots/Kevin+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ DS2",
+
+        },
+        {
+            name: "Jason Tenczar",
+            position: "Graphic Design Lead",
+            linkedin: "https://www.linkedin.com/in/jasontenczar/",
+            imgSrc: require('../assets/headshots/Jason+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ Integris Group",
+
+        },
+    ];
+    const officers2324 = [
+        {
             name: "Victor Polisetty",
             position: "President",
             linkedin: "https://www.linkedin.com/in/victorpolisetty/",
@@ -39,87 +136,87 @@ function Officers() {
           imgSrc: require('../assets/headshots/Alexander+Headshot.jpg'),
           bio: "Software Engineer Intern @ Akima",
 
-      },
-      {
-          name: "Shreyas Kodela",
-          position: "Treasurer",
-          linkedin: "https://www.linkedin.com/in/shreyaskodela/",
-          imgSrc: require('../assets/headshots/Shreyas-headshot.jpg'),
-          bio: "Application Development Intern @ HNTB",
+        },
+        {
+            name: "Shreyas Kodela",
+            position: "Treasurer",
+            linkedin: "https://www.linkedin.com/in/shreyaskodela/",
+            imgSrc: require('../assets/headshots/Shreyas-headshot.jpg'),
+            bio: "Application Development Intern @ HNTB",
 
-      },
-      {
-          name: "Maya Harris",
-          position: "Marketing Lead",
-          linkedin: "https://www.linkedin.com/in/mjoyharris/",
-          imgSrc: require('../assets/headshots/Maya+Headshot.jpg'),
-          bio: "Software Engineer @ National Instruments, Former Software Engineer Intern @ National Instruments",
+        },
+        {
+            name: "Maya Harris",
+            position: "Marketing Lead",
+            linkedin: "https://www.linkedin.com/in/mjoyharris/",
+            imgSrc: require('../assets/headshots/Maya+Headshot.jpg'),
+            bio: "Software Engineer @ National Instruments, Former Software Engineer Intern @ National Instruments",
 
-      },
-      {
-          name: "Jack Crew",
-          position: "Professional Affairs Lead",
-          linkedin: "https://www.linkedin.com/in/jack-crew/",
-          imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
-          bio: "Former Business Development Intern @ TaskUs",
+        },
+        {
+            name: "Jack Crew",
+            position: "Professional Affairs Lead",
+            linkedin: "https://www.linkedin.com/in/jack-crew/",
+            imgSrc: require('../assets/headshots/Jack+Headshot.jpg'),
+            bio: "Former Business Development Intern @ TaskUs",
 
-      },
-      {
-          name: "Andrew Ruales",
-          position: "Workshop Lead",
-          linkedin: "https://www.linkedin.com/in/andrewruales/",
-          imgSrc: require('../assets/headshots/Andrew+Headshot.jpg'),
-          bio: "Former Software Engineer Intern @ Google, Former Microsoft Explore Intern",
+        },
+        {
+            name: "Andrew Ruales",
+            position: "Workshop Lead",
+            linkedin: "https://www.linkedin.com/in/andrewruales/",
+            imgSrc: require('../assets/headshots/Andrew+Headshot.jpg'),
+            bio: "Former Software Engineer Intern @ Google, Former Microsoft Explore Intern",
 
-      },
-      {
-          name: "Miguel Jara",
-          position: "Workshop Lead",
-          linkedin: "https://www.linkedin.com/in/miguel-jar/",
-          imgSrc: require('../assets/headshots/Miguel+Headshot.jpg'),
-          bio: "Former Software Development Engineer Intern @ Amazon",
+        },
+        {
+            name: "Miguel Jara",
+            position: "Workshop Lead",
+            linkedin: "https://www.linkedin.com/in/miguel-jar/",
+            imgSrc: require('../assets/headshots/Miguel+Headshot.jpg'),
+            bio: "Former Software Development Engineer Intern @ Amazon",
 
-      },
-      {
-          name: "Connor Munjed",
-          position: "Social Lead",
-          linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
-          imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
-          bio: "Software Engineer Intern @ FIS Global",
+        },
+        {
+            name: "Connor Munjed",
+            position: "Social Lead",
+            linkedin: "https://www.linkedin.com/in/connor-munjed-58a171289/",
+            imgSrc: require('../assets/headshots/Connor+Headshot.jpg'),
+            bio: "Software Engineer Intern @ FIS Global",
 
-      },
-      {
-        name: "Jacob Hoppenstedt",
-        position: "Social Lead",
-        linkedin: "https://www.linkedin.com/in/jacob-hoppenstedt/",
-        imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
-        bio: "Software Development Engineer Intern @ Publix",
+        },
+        {
+            name: "Jacob Hoppenstedt",
+            position: "Social Lead",
+            linkedin: "https://www.linkedin.com/in/jacob-hoppenstedt/",
+            imgSrc: require('../assets/headshots/Jacob+Headshot.jpg'),
+            bio: "Software Development Engineer Intern @ Publix",
 
-    },
-    {
-        name: "Jonathan Zhang",
-        position: "Mentorship Lead",
-        linkedin: "https://www.linkedin.com/in/jonathanzhang53/",
-        imgSrc: require('../assets/headshots/Jonathan+Headshot.png'),
-        bio: "Former Software Engineer Intern @ Amazon",
+        },
+        {
+            name: "Jonathan Zhang",
+            position: "Mentorship Lead",
+            linkedin: "https://www.linkedin.com/in/jonathanzhang53/",
+            imgSrc: require('../assets/headshots/Jonathan+Headshot.png'),
+            bio: "Former Software Engineer Intern @ Amazon",
 
-    },
-    {
-        name: "Surya Karthikeyan Vijayalakshmi",
-        position: "Graphic Design Lead",
-        linkedin: "https://www.linkedin.com/in/kvsurya/",
-        imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
-        bio: "Software Engineer Intern @ Exelon",
+        },
+        {
+            name: "Surya Karthikeyan Vijayalakshmi",
+            position: "Graphic Design Lead",
+            linkedin: "https://www.linkedin.com/in/kvsurya/",
+            imgSrc: require('../assets/headshots/Surya+Headshot.jpg'),
+            bio: "Software Engineer Intern @ Exelon",
 
-    },
-    {
-        name: "Justin Adam",
-        position: "Opportunity Lead",
-        linkedin: "https://www.linkedin.com/in/justin-adam/",
-        imgSrc: require('../assets/headshots/Justin+Headshot.png'),
-        bio: "Software Engineer Intern @ Bloomberg, Former Software Engineer Intern @ Asana, Wells Fargo",
+        },
+        {
+            name: "Justin Adam",
+            position: "Opportunity Lead",
+            linkedin: "https://www.linkedin.com/in/justin-adam/",
+            imgSrc: require('../assets/headshots/Justin+Headshot.png'),
+            bio: "Software Engineer Intern @ Bloomberg, Former Software Engineer Intern @ Asana, Wells Fargo",
 
-    },
+        },
     ];
 
     const [activeOfficer, setActiveOfficer] = useState(officers[0]);
