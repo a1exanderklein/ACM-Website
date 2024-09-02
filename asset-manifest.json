@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.db8a34df.css",
-    "main.js": "/static/js/main.61e3051b.js",
+    "main.css": "/static/css/main.cd289ceb.css",
+    "main.js": "/static/js/main.26af98b2.js",
     "static/media/Jack+Headshot.jpg": "/static/media/Jack+Headshot.d5c31e468d08b8cd70ef.jpg",
     "static/media/about1.jpg": "/static/media/about1.3d455565d4cb992dfb4a.jpg",
     "static/media/about4.jpg": "/static/media/about4.c1e54ab8e5185df0b419.jpg",
@@ -26,13 +26,19 @@
     "static/media/ufsit.png": "/static/media/ufsit.20a10f62a76855312bab.png",
     "static/media/Jacob+Headshot.jpg": "/static/media/Jacob+Headshot.247af72b17c9c4490fb4.jpg",
     "static/media/Andrew+Headshot.jpg": "/static/media/Andrew+Headshot.6e107129a6388c073048.jpg",
+    "static/media/Diego+Headshot.jpg": "/static/media/Diego+Headshot.e4d0cff5011153f83eb1.jpg",
+    "static/media/Kevin+Headshot.jpg": "/static/media/Kevin+Headshot.04d61f897445429d0789.jpg",
     "static/media/gatorvr.png": "/static/media/gatorvr.9a57b96ae6ba8455d574.png",
+    "static/media/Anteneh+Headshot.jpg": "/static/media/Anteneh+Headshot.d960e0f654ad4f66a9e4.jpg",
+    "static/media/Jason+Headshot.jpg": "/static/media/Jason+Headshot.c0824bb3bfffbe8c50a5.jpg",
     "static/media/accenture.png": "/static/media/accenture.41583b6e4ea93b18263d.png",
     "static/media/Justin+Headshot.png": "/static/media/Justin+Headshot.80e93fd6ab4e6ddb7126.png",
+    "static/media/Kovidh+Headshot.jpg": "/static/media/Kovidh+Headshot.705146857074a230f803.jpg",
     "static/media/Connor+Headshot.jpg": "/static/media/Connor+Headshot.8063f33e0981368325fc.jpg",
     "static/media/centene.png": "/static/media/centene.206f7bfbbd9a582b5bf7.png",
     "static/media/acmfish.png": "/static/media/acmfish.968ea9ab1a03d9aab442.png",
     "static/media/xrp.png": "/static/media/xrp.f1a46470779bd1c83d4b.png",
+    "static/media/Fisher+Headshot.jpg": "/static/media/Fisher+Headshot.b52d1ea0ae30681b9d10.jpg",
     "static/media/Alexander+Headshot.jpg": "/static/media/Alexander+Headshot.94bd79bae5c28b4be574.jpg",
     "static/media/roblox.png": "/static/media/roblox.5b88212ead556e0d860e.png",
     "static/media/Surya+Headshot.jpg": "/static/media/Surya+Headshot.386b5a4a09aabb76dd6b.jpg",
@@ -40,11 +46,11 @@
     "static/media/whatnot.png": "/static/media/whatnot.745b30b93acf7f88eb0f.png",
     "static/media/progteam.png": "/static/media/progteam.b2a3acce75378d76ebdf.png",
     "index.html": "/index.html",
-    "main.db8a34df.css.map": "/static/css/main.db8a34df.css.map",
-    "main.61e3051b.js.map": "/static/js/main.61e3051b.js.map"
+    "main.cd289ceb.css.map": "/static/css/main.cd289ceb.css.map",
+    "main.26af98b2.js.map": "/static/js/main.26af98b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.db8a34df.css",
-    "static/js/main.61e3051b.js"
+    "static/css/main.cd289ceb.css",
+    "static/js/main.26af98b2.js"
   ]
 }
