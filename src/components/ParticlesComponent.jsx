@@ -3,11 +3,12 @@ import { loadFull } from "tsparticles";
 import ACMfish from '../assets/acmfish.png';
 import { useState } from "react";
 import { useEffect } from "react";
+import React, { memo } from 'react';
 
 
 
 
-export default function ParticlesComponent () {
+const ParticlesComponent = memo(() => {
   const particlesInit = async (main) => {
     console.log(main);
     await loadFull(main);
@@ -158,4 +159,6 @@ export default function ParticlesComponent () {
       }}
     />
   );
-}
+})
+
+export default ParticlesComponent;

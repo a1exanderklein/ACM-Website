@@ -17,6 +17,9 @@ import { auth, db } from './firebase/firebaseConfig'; // Import Firebase configu
 import { doc, getDoc, setDoc, collection, query, where, getDocs, updateDoc, increment, serverTimestamp } from 'firebase/firestore';
 import { signInAnonymously, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
+import ParticlesComponent from './components/ParticlesComponent';
+import  ACMLogo  from "./assets/acmlogo.png";
+
 
 const Checkin = () => {
   // State variables 
@@ -221,29 +224,36 @@ const Checkin = () => {
   // LINK: https://mui.com/material-ui/all-components/
   return (
     <>
+      <div className='relative min-h-screen flex items-center justify-center'>
+      <ParticlesComponent/>
+
+      
       {/* Home button icon in the top left, uses the useNavigate hook from react-router-dom in handleHomeClick */}
       <IconButton onClick={handleHomeClick} sx={{ position: 'absolute', top: 16, left: 16, color: 'white' }}>
         <HomeIcon sx={{ fontSize: '40px' }} />
       </IconButton>
 
+      <img src={ACMLogo} alt="UF ACM" className="absolute top-6 right-6 w-40" />
+
       {/* The checkin page background uses the officer card background image */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-4 officerCardBg">
+      
         {/* Checkin page modal FIXME: if you want to change the background of the modal like making it the particles
             you can do it here some how */}
-        <div className="w-full max-w-md p-8 bg-[#292929] rounded shadow-md">
+        <div className="w-full max-w-md p-8 bg-[#0000008d] rounded shadow-md absolute backdrop-blur-sm z-50 checkin-modal">
           <h2 className="mb-6 text-2xl disc-text text-center">ACM Attendance</h2>
           <div className="flex justify-center p-3">
             {/* TextField for Email - Material UI component
                 https://mui.com/material-ui/react-text-field/ 
             */}
             <TextField
-              label="Enter Your Email"
+              label="Enter Your UFL Email"
               variant="outlined"
               fullWidth
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="mb-4"
               sx={{
+                fontFamily: 'Poppins',
                 input: { color: 'white' },
                 '& .MuiOutlinedInput-root': {
                   '& fieldset': {
@@ -275,6 +285,7 @@ const Checkin = () => {
                   onChange={(e) => setFirstName(e.target.value)}
                   className="mb-4"
                   sx={{
+                    fontFamily: 'Poppins',
                     input: { color: 'white' },
                     '& .MuiOutlinedInput-root': {
                       '& fieldset': {
@@ -302,6 +313,7 @@ const Checkin = () => {
                   onChange={(e) => setLastName(e.target.value)}
                   className="mb-4"
                   sx={{
+                    fontFamily: 'Poppins',
                     input: { color: 'white' },
                     '& .MuiOutlinedInput-root': {
                       '& fieldset': {
@@ -327,8 +339,11 @@ const Checkin = () => {
                       feel free to change it to a regular buton should be fine i think 
                   */}
                   <Button
+                    sx={{
+                      color: 'BA8FF8',
+                      fontFamily: 'Poppins',
+                    }}
                     variant="contained"
-                    color="secondary"
                     fullWidth
                     onClick={handleNameSubmit}
                     disabled={isCheckInDisabled}
@@ -347,8 +362,13 @@ const Checkin = () => {
             <div className="flex justify-center">
               <div className="w-3/4 p-3">
                 <Button
+                  sx={{
+                    color: 'BA8FF8',
+                    fontFamily: 'Poppins',
+                  }}
+                  
+
                   variant="contained"
-                  color="secondary"
                   fullWidth
                   onClick={handleSubmit}
                 >
@@ -418,6 +438,7 @@ const Checkin = () => {
           </Button>
         </DialogActions>
       </Dialog>
+        <div className='absolute bottom-6'><p className="leading-5 text-[12px] md:text-xs md:leading-7 ">Designed by the <b>ACMake Design Team</b></p></div>
       </div>
     </>
   );
