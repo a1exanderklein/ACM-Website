@@ -14,14 +14,14 @@ function Officers() {
             position: "President",
             linkedin: "https://www.linkedin.com/in/norman-codes/",
             imgSrc: require('../assets/headshots/Norman+Headshot.jpg'),
-            bio: "Former Software Engineer Intern @ HumeAI, University of Florida",
+            bio: "M.S. in AI Systems '26, University of Florida",
         },
         {
             name: "Alexander Klein",
             position: "Internal Vice President",
             linkedin: "https://www.linkedin.com/in/alexanderkleincs/",
             imgSrc: require('../assets/headshots/Alexander+Headshot.jpg'),
-            bio: "Former Software Engineer Intern @ Akima",
+            bio: "Incoming Solutions Engineer @ Deloitte, Former Software Engineer Intern @ Akima",
 
         },
         {
