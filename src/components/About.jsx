@@ -45,7 +45,7 @@ function About() {
           </div>
           <div className="flex-col">
             <div className="text-center">
-              <CountUp start={750} end={1900} className="countUpText gradient-text3 sm:text-5xl" formatNumber={true} suffix="+"/>
+              <CountUp start={750} end={2100} className="countUpText gradient-text3 sm:text-5xl" formatNumber={true} suffix="+"/>
               <motion.p ref={ref} animate={controls} initial={{ opacity: 0 }} className="text-sm sm:text-lg md:text-xl pt-3">Virtual Members</motion.p>
             </div>
           </div>
